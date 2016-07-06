@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         let button = UIButton.init(frame: CGRectMake(100, 100, 100, 100))
-        button.frame = CGRectMake(110.0, 120.0, 100.0, 50.0)
         button.backgroundColor = UIColor.grayColor()
         button.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
         button.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Highlighted)
