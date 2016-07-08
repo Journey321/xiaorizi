@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-xiaorizi/Alamofire.framework"
+  install_framework "Pods-xiaorizi/CYLTabBarController.framework"
+  install_framework "Pods-xiaorizi/FDFullscreenPopGesture.framework"
   install_framework "Pods-xiaorizi/Kingfisher.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-xiaorizi/Alamofire.framework"
+  install_framework "Pods-xiaorizi/CYLTabBarController.framework"
+  install_framework "Pods-xiaorizi/FDFullscreenPopGesture.framework"
   install_framework "Pods-xiaorizi/Kingfisher.framework"
 fi

@@ -15,8 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // 全局设置导航栏样式
+        setupNavStyle(application)
+        
+        self.window!.rootViewController = MainTabbarViewController()
         return true
+    }
+    //MARK: -- 全局设置导航栏样式
+    func setupNavStyle(application:UIApplication){
+        application.statusBarStyle = UIStatusBarStyle.LightContent
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 244/255, green: 244/255, blue: 243/255, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.blackColor()]
     }
 
     func applicationWillResignActive(application: UIApplication) {
