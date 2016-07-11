@@ -33,3 +33,11 @@ let IS_IPHONE_4 = fabs(Double(kScreenHeight) - Double(480))<DBL_EPSILON
 let IS_IPHONE_5 = fabs(Double(kScreenHeight) - Double(568))<DBL_EPSILON
 let IS_IPHONE_6 = fabs(Double(kScreenHeight) - Double(667))<DBL_EPSILON
 let IS_IPHONE_6P = fabs(Double(kScreenHeight) - Double(736))<DBL_EPSILON
+
+
+struct theme {
+    ///  APP导航条barButtonItem文字大小
+    static let navItemFont: UIFont = UIFont.systemFontOfSize(16)
+    ///  APP导航条titleFont文字大小
+    static let navTitleFont: UIFont = UIFont.systemFontOfSize(18)
+}
