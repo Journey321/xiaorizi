@@ -20,10 +20,10 @@
 		9C1D6DA61D2A43DF0081DC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA51D2A43DF0081DC41 /* AppDelegate.swift */; };
 		9C1D6DA81D2A43DF0081DC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA71D2A43DF0081DC41 /* ViewController.swift */; };
 		9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */; };
-		9C1D6DAD1D2A43DF0081DC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAC1D2A43DF0081DC41 /* Assets.xcassets */; };
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
 		9C1D6DC61D2A43DF0081DC41 /* xiaoriziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */; };
+		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
 		CF019C2937535F069AC8B582 /* Pods_xiaorizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCCFD33FDE94A6358200E45 /* Pods_xiaorizi.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +61,6 @@
 		9C1D6DA51D2A43DF0081DC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1D6DA71D2A43DF0081DC41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9C1D6DAA1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9C1D6DAC1D2A43DF0081DC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1D6DAF1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1D6DB11D2A43DF0081DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1D6DB61D2A43DF0081DC41 /* xiaoriziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaoriziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +69,7 @@
 		9C1D6DC11D2A43DF0081DC41 /* xiaoriziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaoriziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoriziUITests.swift; sourceTree = "<group>"; };
 		9C1D6DC71D2A43DF0081DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C779C8D1D336BFE0068EF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7773B73E0FA34C8EF62FABA /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,9 +154,9 @@
 				2CB68D2E1D300471001713BC /* NSDate+Util.swift */,
 				2CB68D2C1D3003DA001713BC /* JSSystemUtil.swift */,
 				9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */,
-				9C1D6DAC1D2A43DF0081DC41 /* Assets.xcassets */,
 				9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */,
 				9C1D6DB11D2A43DF0081DC41 /* Info.plist */,
+				9C779C8D1D336BFE0068EF14 /* Images.xcassets */,
 			);
 			path = xiaorizi;
 			sourceTree = "<group>";
@@ -290,7 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */,
-				9C1D6DAD1D2A43DF0081DC41 /* Assets.xcassets in Resources */,
+				9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */,
 				9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,6 +518,7 @@
 			baseConfigurationReference = F7773B73E0FA34C8EF62FABA /* Pods-xiaorizi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = xiaorizi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -531,6 +532,7 @@
 			baseConfigurationReference = 703280729F93FB7274C6B0E3 /* Pods-xiaorizi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = xiaorizi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
