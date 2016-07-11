@@ -2,8 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "numberbg.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
@@ -12,7 +11,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "numberbg@3x.png",
+      "filename" : "numberbg@3X.png",
       "scale" : "3x"
     }
   ],

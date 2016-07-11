@@ -2,8 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "chat_sender_bg.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
