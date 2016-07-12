@@ -1,5 +1,5 @@
 //
-//  SmallDayViewController.swift
+//  MineViewController.swift
 //  xiaorizi
 //
 //  Created by JohnSon on 16/7/8.
@@ -8,15 +8,32 @@
 
 import UIKit
 
-class SmallDayViewController: UIViewController {
+class MineViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "我的"
-        self.view.backgroundColor = UIColor.blueColor()
-        // Do any additional setup after loading the view.
+        self.view.backgroundColor = UIColor.yellowColor()
+
+        setupNav()
+    
     }
 
+    
+    // MARK: 初始化导航栏
+    func setupNav(){
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.barButtonItemWithLeftIcon("news_3", highlightedIcon: "", target: self, action: #selector(MineViewController.privateMsgBtnClick))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.barButtonItemWithRightIcon("pcenter_1", highlightedIcon: "", target: self, action: #selector(MineViewController.personInfoBtnClick))
+        
+    }
+    // MARK: 导航栏按钮点击事件
+    func privateMsgBtnClick() {
+        
+    }
+    func personInfoBtnClick() {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

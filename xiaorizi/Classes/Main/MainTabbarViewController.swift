@@ -12,9 +12,9 @@ class MainTabbarViewController: CYLTabBarController {
     // 标题数组
     let titleArr = ["小日子","好玩","找店","我的"]
     // 普通图片数组
-    let normalImgArr = ["tabbar_unselect_home","tabbar_unselect_message","tabbar_unselect_order","tabbar_unselect_forum"]
+    let normalImgArr = ["life_1","fun_1","fstore_1","my_1"]
     // 选中图片数组
-    let selectedImgArr = ["tabbar_select_home","tabbar_select_message","tabbar_select_order","tabbar_select_forum"]
+    let selectedImgArr = ["life_2","fun_2","fstore_2","my_2"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
