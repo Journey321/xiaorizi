@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		0CCCFD33FDE94A6358200E45 /* Pods_xiaorizi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaorizi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C434FBC1D33FB92009BFF7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C434FBC1D33FB92009BFF7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/AppDelegate.swift; sourceTree = "<group>"; };
 		2C434FBE1D33FB92009BFF7C /* NSDate+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Util.swift"; sourceTree = "<group>"; };
 		2C434FBF1D33FB92009BFF7C /* UIBarButtonItem+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Util.swift"; sourceTree = "<group>"; };
 		2C434FC01D33FB92009BFF7C /* UIColor+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
@@ -112,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				2C434FDE1D33FBF7009BFF7C /* Constant */,
-				2C434FBC1D33FB92009BFF7C /* AppDelegate.swift */,
 				2C434FBD1D33FB92009BFF7C /* Extension */,
 				2C434FC21D33FB92009BFF7C /* Find */,
 				2C434FC51D33FB92009BFF7C /* Main */,
@@ -235,6 +234,7 @@
 				2C434FBB1D33FB92009BFF7C /* Classes */,
 				9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */,
 				9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */,
+				2C434FBC1D33FB92009BFF7C /* AppDelegate.swift */,
 				9C1D6DB11D2A43DF0081DC41 /* Info.plist */,
 				9C779C8D1D336BFE0068EF14 /* Images.xcassets */,
 			);
