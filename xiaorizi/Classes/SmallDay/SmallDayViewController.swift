@@ -16,9 +16,52 @@ class SmallDayViewController: UIViewController {
         self.title = "小日子"
         self.view.backgroundColor = UIColor.blueColor()
         
+        let button = UIButton.init(type: UIButtonType.Custom)
+        button.frame = CGRectMake(100, 100, 100, 30)
+        button.backgroundColor = UIColor.redColor()
+        button.addTarget(self, action: #selector(SmallDayViewController.btnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
+        
+        
         setupNav()
+        
+        
     }
+    
+    func btnClick(button:UIButton){
+        print("----------")
+        
+//        创建分享参数
+        let shareParemes = NSMutableDictionary()
+        var imageArray = NSArray()
+        imageArray = ["onepage","twopage"]
+        shareParemes.SSDKSetupShareParamsByText("分享内容", images: imageArray, url:  NSURL(string:"http://mob.com"), title: "分享标题", type:
+            SSDKContentType.Image)
+        
+        
+//FIXME: 这里搞不定，也可能是因为模拟器测试的，真机因为那个tabbar报错，无法测试
 
+        ShareSDK.showShareActionSheet(view, items:nil, shareParams: shareParemes) { (state : SSDKResponseState, type:SSDKPlatformType, userData : [NSObject : AnyObject]!, contentEntity :SSDKContentEntity!, error : NSError!, end:Bool) in
+            
+            switch state{
+            case SSDKResponseState.Success:
+                print("分享成功")
+            case SSDKResponseState.Fail:
+                print("分享失败,错误描述:\(error)")
+            case SSDKResponseState.Cancel:
+                print("分享取消")
+            default:
+                break
+            }
+            
+            
+        }
+        
+        
+
+    }
+    
+    
     // MARK: 初始化导航栏
     func setupNav(){
         cityBtn = TextImageButton(frame: CGRectMake(0, 20, 80, 44))
