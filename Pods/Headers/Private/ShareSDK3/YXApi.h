@@ -1,0 +1,1 @@
+../../../ShareSDK3/ShareSDK/Support/PlatformSDK/YiXinSDK/YXApi.h

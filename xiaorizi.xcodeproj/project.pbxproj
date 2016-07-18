@@ -19,12 +19,27 @@
 		2C434FDB1D33FB92009BFF7C /* SmallDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */; };
 		2C434FDC1D33FB92009BFF7C /* TextImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */; };
 		2C434FE01D33FBF7009BFF7C /* JSSystemUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FDF1D33FBF7009BFF7C /* JSSystemUtil.swift */; };
+		30ED9E4EA1570E288EFD1E05 /* Pods_xiaoriziTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFE186429E609C490EC8E011 /* Pods_xiaoriziTests.framework */; };
+		82F3E9873CD890F9F44B27FC /* Pods_xiaoriziUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA29893D60C3BF19253E06A /* Pods_xiaoriziUITests.framework */; };
 		9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */; };
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
 		9C1D6DC61D2A43DF0081DC41 /* xiaoriziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */; };
 		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
-		CF019C2937535F069AC8B582 /* Pods_xiaorizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCCFD33FDE94A6358200E45 /* Pods_xiaorizi.framework */; };
+		9CA161D61D3C751C00606B56 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161D51D3C751C00606B56 /* MessageUI.framework */; };
+		9CA161D81D3C752700606B56 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161D71D3C752700606B56 /* libsqlite3.tbd */; };
+		9CA161DA1D3C752D00606B56 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161D91D3C752D00606B56 /* ImageIO.framework */; };
+		9CA161DC1D3C753400606B56 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DB1D3C753400606B56 /* JavaScriptCore.framework */; };
+		9CA161DE1D3C754100606B56 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DD1D3C754100606B56 /* libstdc++.tbd */; };
+		9CA161E01D3C754C00606B56 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DF1D3C754C00606B56 /* libicucore.tbd */; };
+		9CA161E21D3C755200606B56 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161E11D3C755200606B56 /* libz.tbd */; };
+		9CA161F51D3C7DF800606B56 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161F41D3C7DF800606B56 /* ShareSDK.framework */; };
+		9CA161F61D3C7E0900606B56 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161E31D3C757300606B56 /* ShareSDKExtension.framework */; };
+		9CA161F71D3C7E0900606B56 /* ShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161E51D3C757300606B56 /* ShareSDKUI.framework */; };
+		9CA161F81D3C7E1900606B56 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161EA1D3C758D00606B56 /* TencentOpenAPI.framework */; };
+		9CA161F91D3C7E2C00606B56 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161ED1D3C75AA00606B56 /* libWeChatSDK.a */; };
+		9CA161FA1D3C7E3C00606B56 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161F01D3C75BB00606B56 /* ShareSDKConnector.framework */; };
+		9CA161FE1D3C7FC500606B56 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161FD1D3C7FC500606B56 /* MOBFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CCCFD33FDE94A6358200E45 /* Pods_xiaorizi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaorizi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF07A038F86DA44FCA80C83 /* Pods-xiaoriziUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoriziUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoriziUITests/Pods-xiaoriziUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2C434FBC1D33FB92009BFF7C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Classes/AppDelegate.swift; sourceTree = "<group>"; };
 		2C434FBE1D33FB92009BFF7C /* NSDate+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Util.swift"; sourceTree = "<group>"; };
 		2C434FBF1D33FB92009BFF7C /* UIBarButtonItem+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Util.swift"; sourceTree = "<group>"; };
@@ -58,7 +73,11 @@
 		2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDayViewController.swift; sourceTree = "<group>"; };
 		2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageButton.swift; sourceTree = "<group>"; };
 		2C434FDF1D33FBF7009BFF7C /* JSSystemUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSystemUtil.swift; sourceTree = "<group>"; };
-		703280729F93FB7274C6B0E3 /* Pods-xiaorizi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.release.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.release.xcconfig"; sourceTree = "<group>"; };
+		4B9DA77EF6DB8E5DA9BBCDDE /* Pods-xiaoriziTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoriziTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoriziTests/Pods-xiaoriziTests.release.xcconfig"; sourceTree = "<group>"; };
+		56446FC616270F7D57246EA6 /* Pods-xiaoriziTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoriziTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoriziTests/Pods-xiaoriziTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64A052726A07BEE5CDF0FFC9 /* Pods-xiaoriziUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoriziUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoriziUITests/Pods-xiaoriziUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8402C3BB02270300DCDA7FAC /* Pods-xiaorizi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.release.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.release.xcconfig"; sourceTree = "<group>"; };
+		9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
 		9C1D6DA21D2A43DF0081DC41 /* xiaorizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaorizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DAA1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1D6DAF1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,7 +89,27 @@
 		9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoriziUITests.swift; sourceTree = "<group>"; };
 		9C1D6DC71D2A43DF0081DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C779C8D1D336BFE0068EF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F7773B73E0FA34C8EF62FABA /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
+		9CA161D41D3C74DA00606B56 /* XiaoRiZiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XiaoRiZiHeader.h; path = ../XiaoRiZiHeader.h; sourceTree = "<group>"; };
+		9CA161D51D3C751C00606B56 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9CA161D71D3C752700606B56 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		9CA161D91D3C752D00606B56 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		9CA161DB1D3C753400606B56 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9CA161DD1D3C754100606B56 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		9CA161DF1D3C754C00606B56 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		9CA161E11D3C755200606B56 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9CA161E31D3C757300606B56 /* ShareSDKExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKExtension.framework; path = Pods/ShareSDK3/ShareSDK/Support/Optional/ShareSDKExtension.framework; sourceTree = "<group>"; };
+		9CA161E41D3C757300606B56 /* ShareSDKUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ShareSDKUI.bundle; path = Pods/ShareSDK3/ShareSDK/Support/Optional/ShareSDKUI.bundle; sourceTree = "<group>"; };
+		9CA161E51D3C757300606B56 /* ShareSDKUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKUI.framework; path = Pods/ShareSDK3/ShareSDK/Support/Optional/ShareSDKUI.framework; sourceTree = "<group>"; };
+		9CA161E91D3C758D00606B56 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		9CA161EA1D3C758D00606B56 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		9CA161ED1D3C75AA00606B56 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/WeChatSDK/libWeChatSDK.a; sourceTree = "<group>"; };
+		9CA161EF1D3C75BB00606B56 /* ShareSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ShareSDK.bundle; path = Pods/ShareSDK3/ShareSDK/Support/Required/ShareSDK.bundle; sourceTree = "<group>"; };
+		9CA161F01D3C75BB00606B56 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConnector.framework; path = Pods/ShareSDK3/ShareSDK/Support/Required/ShareSDKConnector.framework; sourceTree = "<group>"; };
+		9CA161F41D3C7DF800606B56 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDK.framework; path = Pods/ShareSDK3/ShareSDK/ShareSDK.framework; sourceTree = "<group>"; };
+		9CA161FD1D3C7FC500606B56 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = Pods/ShareSDK3/MOBFoundation.framework; sourceTree = "<group>"; };
+		BFE186429E609C490EC8E011 /* Pods_xiaoriziTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoriziTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA29893D60C3BF19253E06A /* Pods_xiaoriziUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoriziUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaorizi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +117,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF019C2937535F069AC8B582 /* Pods_xiaorizi.framework in Frameworks */,
+				9CA161FE1D3C7FC500606B56 /* MOBFoundation.framework in Frameworks */,
+				9CA161FA1D3C7E3C00606B56 /* ShareSDKConnector.framework in Frameworks */,
+				9CA161F91D3C7E2C00606B56 /* libWeChatSDK.a in Frameworks */,
+				9CA161F81D3C7E1900606B56 /* TencentOpenAPI.framework in Frameworks */,
+				9CA161F61D3C7E0900606B56 /* ShareSDKExtension.framework in Frameworks */,
+				9CA161F71D3C7E0900606B56 /* ShareSDKUI.framework in Frameworks */,
+				9CA161F51D3C7DF800606B56 /* ShareSDK.framework in Frameworks */,
+				9CA161E21D3C755200606B56 /* libz.tbd in Frameworks */,
+				9CA161E01D3C754C00606B56 /* libicucore.tbd in Frameworks */,
+				9CA161DE1D3C754100606B56 /* libstdc++.tbd in Frameworks */,
+				9CA161DC1D3C753400606B56 /* JavaScriptCore.framework in Frameworks */,
+				9CA161DA1D3C752D00606B56 /* ImageIO.framework in Frameworks */,
+				9CA161D81D3C752700606B56 /* libsqlite3.tbd in Frameworks */,
+				9CA161D61D3C751C00606B56 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30ED9E4EA1570E288EFD1E05 /* Pods_xiaoriziTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,21 +146,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F3E9873CD890F9F44B27FC /* Pods_xiaoriziUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18E28B8DEC9CB2B8BC06682C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F7773B73E0FA34C8EF62FABA /* Pods-xiaorizi.debug.xcconfig */,
-				703280729F93FB7274C6B0E3 /* Pods-xiaorizi.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		2C434FBB1D33FB92009BFF7C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,10 +243,29 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
-		73957A2B5B3716F5DA913A00 /* Frameworks */ = {
+		4851DCE6771B29AB69243A0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0CCCFD33FDE94A6358200E45 /* Pods_xiaorizi.framework */,
+				9CA161FD1D3C7FC500606B56 /* MOBFoundation.framework */,
+				9CA161F41D3C7DF800606B56 /* ShareSDK.framework */,
+				9CA161EF1D3C75BB00606B56 /* ShareSDK.bundle */,
+				9CA161F01D3C75BB00606B56 /* ShareSDKConnector.framework */,
+				9CA161ED1D3C75AA00606B56 /* libWeChatSDK.a */,
+				9CA161E91D3C758D00606B56 /* TencentOpenApi_IOS_Bundle.bundle */,
+				9CA161EA1D3C758D00606B56 /* TencentOpenAPI.framework */,
+				9CA161E31D3C757300606B56 /* ShareSDKExtension.framework */,
+				9CA161E41D3C757300606B56 /* ShareSDKUI.bundle */,
+				9CA161E51D3C757300606B56 /* ShareSDKUI.framework */,
+				9CA161E11D3C755200606B56 /* libz.tbd */,
+				9CA161DF1D3C754C00606B56 /* libicucore.tbd */,
+				9CA161DD1D3C754100606B56 /* libstdc++.tbd */,
+				9CA161DB1D3C753400606B56 /* JavaScriptCore.framework */,
+				9CA161D91D3C752D00606B56 /* ImageIO.framework */,
+				9CA161D71D3C752700606B56 /* libsqlite3.tbd */,
+				9CA161D51D3C751C00606B56 /* MessageUI.framework */,
+				F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */,
+				BFE186429E609C490EC8E011 /* Pods_xiaoriziTests.framework */,
+				CCA29893D60C3BF19253E06A /* Pods_xiaoriziUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -213,8 +277,8 @@
 				9C1D6DB91D2A43DF0081DC41 /* xiaoriziTests */,
 				9C1D6DC41D2A43DF0081DC41 /* xiaoriziUITests */,
 				9C1D6DA31D2A43DF0081DC41 /* Products */,
-				18E28B8DEC9CB2B8BC06682C /* Pods */,
-				73957A2B5B3716F5DA913A00 /* Frameworks */,
+				FCC66C3802C363E99D97C7DC /* Pods */,
+				4851DCE6771B29AB69243A0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +299,7 @@
 				9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */,
 				9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */,
 				2C434FBC1D33FB92009BFF7C /* AppDelegate.swift */,
+				9CA161D41D3C74DA00606B56 /* XiaoRiZiHeader.h */,
 				9C1D6DB11D2A43DF0081DC41 /* Info.plist */,
 				9C779C8D1D336BFE0068EF14 /* Images.xcassets */,
 			);
@@ -259,6 +324,19 @@
 			path = xiaoriziUITests;
 			sourceTree = "<group>";
 		};
+		FCC66C3802C363E99D97C7DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */,
+				8402C3BB02270300DCDA7FAC /* Pods-xiaorizi.release.xcconfig */,
+				56446FC616270F7D57246EA6 /* Pods-xiaoriziTests.debug.xcconfig */,
+				4B9DA77EF6DB8E5DA9BBCDDE /* Pods-xiaoriziTests.release.xcconfig */,
+				1AF07A038F86DA44FCA80C83 /* Pods-xiaoriziUITests.debug.xcconfig */,
+				64A052726A07BEE5CDF0FFC9 /* Pods-xiaoriziUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,12 +344,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1D6DCA1D2A43DF0081DC41 /* Build configuration list for PBXNativeTarget "xiaorizi" */;
 			buildPhases = (
-				B1963F8D7B4634C008DEB96A /* Check Pods Manifest.lock */,
+				FB0DE4B0553CAE0BFF226E84 /* [CP] Check Pods Manifest.lock */,
 				9C1D6D9E1D2A43DF0081DC41 /* Sources */,
 				9C1D6D9F1D2A43DF0081DC41 /* Frameworks */,
 				9C1D6DA01D2A43DF0081DC41 /* Resources */,
-				88E9058419BD32ED6B9B8658 /* Embed Pods Frameworks */,
-				B23603BF1B27922B7CE17684 /* Copy Pods Resources */,
+				EA7A6C6A35C3A9D4B613A70F /* [CP] Embed Pods Frameworks */,
+				D871ADFE75D0E60D2FC591CA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -286,9 +364,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1D6DCD1D2A43DF0081DC41 /* Build configuration list for PBXNativeTarget "xiaoriziTests" */;
 			buildPhases = (
+				4E5F5BF024762F38728ADC77 /* [CP] Check Pods Manifest.lock */,
 				9C1D6DB21D2A43DF0081DC41 /* Sources */,
 				9C1D6DB31D2A43DF0081DC41 /* Frameworks */,
 				9C1D6DB41D2A43DF0081DC41 /* Resources */,
+				0594398FDDA6A94996FE1DA3 /* [CP] Embed Pods Frameworks */,
+				5694FCBD1CB7728F02FD981E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,9 +385,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1D6DD01D2A43DF0081DC41 /* Build configuration list for PBXNativeTarget "xiaoriziUITests" */;
 			buildPhases = (
+				95B1259438FE8F40630A2D72 /* [CP] Check Pods Manifest.lock */,
 				9C1D6DBD1D2A43DF0081DC41 /* Sources */,
 				9C1D6DBE1D2A43DF0081DC41 /* Frameworks */,
 				9C1D6DBF1D2A43DF0081DC41 /* Resources */,
+				C82B82925BA09E19CFB6962E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,29 +475,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		88E9058419BD32ED6B9B8658 /* Embed Pods Frameworks */ = {
+		0594398FDDA6A94996FE1DA3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaoriziTests/Pods-xiaoriziTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1963F8D7B4634C008DEB96A /* Check Pods Manifest.lock */ = {
+		4E5F5BF024762F38728ADC77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,19 +505,94 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B23603BF1B27922B7CE17684 /* Copy Pods Resources */ = {
+		5694FCBD1CB7728F02FD981E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaoriziTests/Pods-xiaoriziTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B1259438FE8F40630A2D72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C82B82925BA09E19CFB6962E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaoriziUITests/Pods-xiaoriziUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D871ADFE75D0E60D2FC591CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7A6C6A35C3A9D4B613A70F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB0DE4B0553CAE0BFF226E84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -595,34 +753,61 @@
 		};
 		9C1D6DCB1D2A43DF0081DC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7773B73E0FA34C8EF62FABA /* Pods-xiaorizi.debug.xcconfig */;
+			baseConfigurationReference = 9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK",
+					"$(PROJECT_DIR)/Pods/ShareSDK3",
+				);
 				INFOPLIST_FILE = xiaorizi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaorizi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
 			};
 			name = Debug;
 		};
 		9C1D6DCC1D2A43DF0081DC41 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 703280729F93FB7274C6B0E3 /* Pods-xiaorizi.release.xcconfig */;
+			baseConfigurationReference = 8402C3BB02270300DCDA7FAC /* Pods-xiaorizi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/Optional",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/QQSDK",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/Required",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK",
+					"$(PROJECT_DIR)/Pods/ShareSDK3",
+				);
 				INFOPLIST_FILE = xiaorizi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/ShareSDK3/ShareSDK/Support/PlatformSDK/WeChatSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaorizi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
 			};
 			name = Release;
 		};
 		9C1D6DCE1D2A43DF0081DC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56446FC616270F7D57246EA6 /* Pods-xiaoriziTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = xiaoriziTests/Info.plist;
@@ -635,6 +820,7 @@
 		};
 		9C1D6DCF1D2A43DF0081DC41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B9DA77EF6DB8E5DA9BBCDDE /* Pods-xiaoriziTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = xiaoriziTests/Info.plist;
@@ -647,6 +833,7 @@
 		};
 		9C1D6DD11D2A43DF0081DC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AF07A038F86DA44FCA80C83 /* Pods-xiaoriziUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = xiaoriziUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -658,6 +845,7 @@
 		};
 		9C1D6DD21D2A43DF0081DC41 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A052726A07BEE5CDF0FFC9 /* Pods-xiaoriziUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = xiaoriziUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
