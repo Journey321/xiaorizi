@@ -38,7 +38,7 @@
 		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21B115C1AEC5EC6BA9FAE94F06FE15C /* Alamofire.swift */; };
 		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4DC3D8EFEFCB57DD743BA66A83A5F6 /* Foundation.framework */; };
 		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 432C7103FE4591FFCAF126488A8523C7 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9CA161FC1D3C7FB000606B56 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161FB1D3C7FB000606B56 /* MOBFoundation.framework */; };
+		9CA162011D3DBE9000606B56 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA162001D3DBE9000606B56 /* MOBFoundation.framework */; };
 		9D1889C0A9EACECDD91B5641EC4F1C30 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 882B49DEA7E68D1863F563A89F7E7D9F /* CYLTabBar.m */; };
 		A05CAE22F8CBF738BD30EBD49070A216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4DC3D8EFEFCB57DD743BA66A83A5F6 /* Foundation.framework */; };
 		A1BD9A61F21F55188DF9E2182020752E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21784C9D6A1A9C08D58FADC69D45D68F /* ImageCache.swift */; };
@@ -183,7 +183,7 @@
 		97D1C0B461F000916F79FDCCD054F258 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		982E27331DE0E463ABB933F3167EE0F6 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		99F84B8BE54D5DF761C3E94DE2395B6E /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
-		9CA161FB1D3C7FB000606B56 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		9CA162001D3DBE9000606B56 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = ShareSDK/Support/Required/MOBFoundation.framework; sourceTree = "<group>"; };
 		9D15AB23E5FE315C0C37351BFC34877B /* Pods-xiaoriziTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-xiaoriziTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9DA352070168D9BDB7B6058E9D86C02A /* FDFullscreenPopGesture-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FDFullscreenPopGesture-umbrella.h"; sourceTree = "<group>"; };
 		9DE04A042F09A2624FA42A8F664887F4 /* Pods-xiaorizi-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-xiaorizi-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA161FC1D3C7FB000606B56 /* MOBFoundation.framework in Frameworks */,
+				9CA162011D3DBE9000606B56 /* MOBFoundation.framework in Frameworks */,
 				12AD54D16CD3CCCF041A7F6219DD641E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,7 +710,7 @@
 		C0FBB89EA3E1F95BDBDC96FF5BAFB4ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9CA161FB1D3C7FB000606B56 /* MOBFoundation.framework */,
+				9CA162001D3DBE9000606B56 /* MOBFoundation.framework */,
 				880019EA9CC5C5C12134D312F94E14F0 /* ShareSDKConnector.framework */,
 				BB42EF6B015BAD23826B04578AB4DB1E /* ShareSDKExtension.framework */,
 			);
@@ -1455,6 +1455,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDK3",
+					"$(PROJECT_DIR)/ShareSDK3/ShareSDK/Support/Required",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-xiaorizi/Info.plist";
@@ -1623,6 +1624,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ShareSDK3",
+					"$(PROJECT_DIR)/ShareSDK3/ShareSDK/Support/Required",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-xiaorizi/Info.plist";
