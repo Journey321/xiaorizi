@@ -21,11 +21,6 @@ class SmallDayViewController: UIViewController {
         button.backgroundColor = UIColor.redColor()
         button.addTarget(self, action: #selector(SmallDayViewController.btnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
-        button.title = "分享内容"
-
-        setupNav()
-        
-        
     }
     
     func btnClick(button:UIButton){
@@ -61,7 +56,7 @@ class SmallDayViewController: UIViewController {
         cityBtn.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         cityBtn.setImage(UIImage(named: "city_1"), forState: UIControlState.Normal)
         cityBtn.addTarget(self, action: #selector(SmallDayViewController.selectedCityBtnClick), forControlEvents: .TouchUpInside)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: cityBtn)
+        self.navigfationItem.leftBarButtonItem = UIBarButtonItem(customView: cityBtn)
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.barButtonItemWithRightIcon("camera5", highlightedIcon: "", target: self, action: #selector(SmallDayViewController.shareBtnClick))
     }
@@ -88,5 +83,4 @@ class SmallDayViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

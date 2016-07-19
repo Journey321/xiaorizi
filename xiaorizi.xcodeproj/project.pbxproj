@@ -43,8 +43,10 @@
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
 		9C1D6DC61D2A43DF0081DC41 /* xiaoriziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */; };
 		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
+
 		AB727795EFD4B70E361AE6CE /* Pods_xiaoriziTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C06AE0694EBE4749083AF79 /* Pods_xiaoriziTests.framework */; };
 		E180DF18FBE17BFDFD165409 /* Pods_xiaoriziUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC14BE027A39FA5A880CA7A /* Pods_xiaoriziUITests.framework */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +165,7 @@
 				87E68D971D3E148F006AED03 /* ShareSDKExtension.framework in Frameworks */,
 				87E68DA21D3E148F006AED03 /* ShareSDKConnector.framework in Frameworks */,
 				87E68D991D3E148F006AED03 /* ShareSDKUI.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

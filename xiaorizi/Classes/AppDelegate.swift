@@ -60,6 +60,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
                 }
         })
 
+        
+
+        
+        
     }
 //MARK: -- 全局设置导航栏样式
     func setupNavStyle(application:UIApplication){
