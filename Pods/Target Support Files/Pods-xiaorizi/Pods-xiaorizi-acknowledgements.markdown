@@ -99,6 +99,10 @@ SOFTWARE.
 
 
 
+## MOBFoundation
+
+Copyright © 2012-2015 mob
+
 ## ShareSDK3
 
 Copyright © 2012-2015 mob

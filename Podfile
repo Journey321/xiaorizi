@@ -10,7 +10,7 @@ pod 'CYLTabBarController', '~> 1.5.4' ## tabbar
 pod 'FDFullscreenPopGesture', '~> 1.1' ## 侧滑返回
 pod 'ShareSDK3' ##shareSDK分享
 pod 'ShareSDK3/ShareSDKUI'
-pod 'ShareSDK3/ShareSDKPlatforms'
+pod 'MOBFoundation' ##公共库
 pod 'ShareSDK3/ShareSDKPlatforms/QQ' ##QQ
 pod 'ShareSDK3/ShareSDKPlatforms/SinaWeibo'  ##新浪微博
 pod 'ShareSDK3/ShareSDKPlatforms/WeChat'  ##微信

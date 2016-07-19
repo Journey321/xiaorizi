@@ -33,13 +33,7 @@
 		9CA161DE1D3C754100606B56 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DD1D3C754100606B56 /* libstdc++.tbd */; };
 		9CA161E01D3C754C00606B56 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DF1D3C754C00606B56 /* libicucore.tbd */; };
 		9CA161E21D3C755200606B56 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161E11D3C755200606B56 /* libz.tbd */; };
-		9CA161F51D3C7DF800606B56 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161F41D3C7DF800606B56 /* ShareSDK.framework */; };
-		9CA161F61D3C7E0900606B56 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161E31D3C757300606B56 /* ShareSDKExtension.framework */; };
-		9CA161F71D3C7E0900606B56 /* ShareSDKUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161E51D3C757300606B56 /* ShareSDKUI.framework */; };
-		9CA161F81D3C7E1900606B56 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161EA1D3C758D00606B56 /* TencentOpenAPI.framework */; };
-		9CA161F91D3C7E2C00606B56 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161ED1D3C75AA00606B56 /* libWeChatSDK.a */; };
-		9CA161FA1D3C7E3C00606B56 /* ShareSDKConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161F01D3C75BB00606B56 /* ShareSDKConnector.framework */; };
-		9CA161FE1D3C7FC500606B56 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161FD1D3C7FC500606B56 /* MOBFoundation.framework */; };
+		BFD3D06E99371CBA31A4A8E7 /* Pods_xiaorizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,13 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA161FE1D3C7FC500606B56 /* MOBFoundation.framework in Frameworks */,
-				9CA161FA1D3C7E3C00606B56 /* ShareSDKConnector.framework in Frameworks */,
-				9CA161F91D3C7E2C00606B56 /* libWeChatSDK.a in Frameworks */,
-				9CA161F81D3C7E1900606B56 /* TencentOpenAPI.framework in Frameworks */,
-				9CA161F61D3C7E0900606B56 /* ShareSDKExtension.framework in Frameworks */,
-				9CA161F71D3C7E0900606B56 /* ShareSDKUI.framework in Frameworks */,
-				9CA161F51D3C7DF800606B56 /* ShareSDK.framework in Frameworks */,
 				9CA161E21D3C755200606B56 /* libz.tbd in Frameworks */,
 				9CA161E01D3C754C00606B56 /* libicucore.tbd in Frameworks */,
 				9CA161DE1D3C754100606B56 /* libstdc++.tbd in Frameworks */,
@@ -131,6 +118,7 @@
 				9CA161DA1D3C752D00606B56 /* ImageIO.framework in Frameworks */,
 				9CA161D81D3C752700606B56 /* libsqlite3.tbd in Frameworks */,
 				9CA161D61D3C751C00606B56 /* MessageUI.framework in Frameworks */,
+				BFD3D06E99371CBA31A4A8E7 /* Pods_xiaorizi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

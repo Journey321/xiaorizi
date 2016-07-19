@@ -27,9 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //MARK: -- 第三方分享 shareSDK
     func shareSDK(){
         
+        
         ShareSDK.registerApp("845cb98583e7",
-                             //SSDKPlatformType.TypeSinaWeibo.rawValue,
-                             activePlatforms: [SSDKPlatformType.TypeWechat.rawValue,SSDKPlatformType.TypeQQ.rawValue],
+                             activePlatforms: [SSDKPlatformType.TypeWechat.rawValue,SSDKPlatformType.TypeQQ.rawValue,SSDKPlatformType.TypeSinaWeibo.rawValue],
                              
                              
                              onImport: {(platform : SSDKPlatformType) -> Void in
@@ -65,6 +65,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                 }
         })
 
+        
+
+        
+        
     }
     
     
