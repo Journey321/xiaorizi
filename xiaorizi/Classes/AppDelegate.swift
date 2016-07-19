@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate  {
     
     var window: UIWindow?
     
@@ -19,55 +19,52 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupNavStyle(application)
         customizeInterface()
         self.window!.rootViewController = MainTabbarViewController()
-        shareSDK();
+        share()
         return true
     }
-    
-    
-//MARK: -- 第三方分享 shareSDK
-    func shareSDK(){
-        
-        ShareSDK.registerApp("845cb98583e7",
-                             //SSDKPlatformType.TypeSinaWeibo.rawValue,
-                             activePlatforms: [SSDKPlatformType.TypeWechat.rawValue,SSDKPlatformType.TypeQQ.rawValue],
-                             
-                             
-                             onImport: {(platform : SSDKPlatformType) -> Void in
-                                
-                                switch platform{
-                                    
-                                case SSDKPlatformType.TypeWechat:
-                                    ShareSDKConnector.connectWeChat(WXApi.classForCoder())
-//FIXME: QQ需要真机测试要不然报错
-//                                case SSDKPlatformType.TypeQQ:
-//                                    ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
-                                    break
-                                default:
-                                    break
-                                }
-            },
-                             
-                             onConfiguration: {(platform : SSDKPlatformType,appInfo : NSMutableDictionary!) -> Void in
-                                
-                                switch platform {
-                                    
-                                case SSDKPlatformType.TypeWechat:
-                                    //设置微信应用信息
-                                    appInfo.SSDKSetupWeChatByAppId("wx4d09451d0633a5f8", appSecret: "7c17ed2fb647aff937f72f1a7dd4e966")
 
-                                case SSDKPlatformType.TypeQQ:
-//                                    设置QQ应用信息
-                                    appInfo.SSDKSetupQQByAppId("1103960594", appKey:"R90DhXXezSTn2aM8", authType:"")
-                                    
-                                default:
-                                    break
-                                    
-                                }
+    func share(){
+
+        ShareSDK.registerApp("845cb98583e7",
+
+            activePlatforms: [SSDKPlatformType.TypeWechat.rawValue,SSDKPlatformType.TypeQQ.rawValue],
+
+            onImport: {(platform : SSDKPlatformType) -> Void in
+
+                switch platform{
+
+                case SSDKPlatformType.TypeWechat:
+                   ShareSDKConnector.connectWeChat(WXApi.classForCoder())
+                case SSDKPlatformType.TypeQQ:
+                    ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
+                    break
+                default:
+                    break
+                }
+            },
+
+            onConfiguration: {(platform : SSDKPlatformType,appInfo : NSMutableDictionary!) -> Void in
+                switch platform {
+
+                case SSDKPlatformType.TypeWechat:
+                    //设置微信应用信息
+                    appInfo.SSDKSetupWeChatByAppId("wx4d09451d0633a5f8", appSecret: "7c17ed2fb647aff937f72f1a7dd4e966")
+
+                case SSDKPlatformType.TypeQQ:
+                    //                                    设置QQ应用信息
+                    appInfo.SSDKSetupQQByAppId("1103960594", appKey:"R90DhXXezSTn2aM8", authType:"")
+
+                default:
+                    break
+
+                }
         })
 
+        
+
+        
+        
     }
-    
-    
 //MARK: -- 全局设置导航栏样式
     func setupNavStyle(application:UIApplication){
         application.statusBarStyle = UIStatusBarStyle.LightContent
@@ -118,6 +115,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+//    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+//
+//        return WXApi.handleOpenURL(url, delegate:self)
+//    }
+
+//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject? ) -> Bool{
+//
+//        return ShareSDK.handleOpenURL(url, sourceApplication: sourceApplication, annotation: annotation, wxDelegate: self)
+//    }
+
+
+
     
     
 }

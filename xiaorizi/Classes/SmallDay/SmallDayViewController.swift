@@ -16,31 +16,21 @@ class SmallDayViewController: UIViewController {
         self.title = "小日子"
         self.view.backgroundColor = UIColor.blueColor()
         
-        let button = UIButton.init(type: UIButtonType.Custom)
+        let button = UIButton(type: UIButtonType.Custom)
         button.frame = CGRectMake(100, 100, 100, 30)
         button.backgroundColor = UIColor.redColor()
         button.addTarget(self, action: #selector(SmallDayViewController.btnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
-        
-        
-        setupNav()
-        
-        
     }
     
     func btnClick(button:UIButton){
-        print("----------")
         
-//        创建分享参数
+        // 1 创建分享参数
+        
         let shareParemes = NSMutableDictionary()
-        var imageArray = NSArray()
-        imageArray = ["onepage","twopage"]
-        shareParemes.SSDKSetupShareParamsByText("分享内容", images: imageArray, url:  NSURL(string:"http://mob.com"), title: "分享标题", type:
+        shareParemes.SSDKSetupShareParamsByText("分享内容", images:UIImage(named:"collect.png"), url:  NSURL(string:"http://mob.com"), title: "分享标题", type:
             SSDKContentType.Image)
         
-        
-//FIXME: 这里搞不定，也可能是因为模拟器测试的，真机因为那个tabbar报错，无法测试
-
         ShareSDK.showShareActionSheet(view, items:nil, shareParams: shareParemes) { (state : SSDKResponseState, type:SSDKPlatformType, userData : [NSObject : AnyObject]!, contentEntity :SSDKContentEntity!, error : NSError!, end:Bool) in
             
             switch state{
@@ -52,13 +42,10 @@ class SmallDayViewController: UIViewController {
                 print("分享取消")
             default:
                 break
+                
             }
-            
-            
         }
         
-        
-
     }
     
     
@@ -87,15 +74,14 @@ class SmallDayViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }

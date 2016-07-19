@@ -3,47 +3,23 @@ PODS:
   - CYLTabBarController (1.5.6)
   - FDFullscreenPopGesture (1.1)
   - Kingfisher (2.3.1)
-  - ShareSDK3 (3.3.2):
-    - ShareSDK3/ShareSDK (= 3.3.2)
-  - ShareSDK3/ShareSDK (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms (3.3.2):
-    - ShareSDK3/ShareSDKPlatforms/AliPaySocial (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/Kakao (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/Messenger (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/QQ (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/RenRen (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/SinaWeibo (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/WeChat (= 3.3.2)
-    - ShareSDK3/ShareSDKPlatforms/Yixin (= 3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/AliPaySocial (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/Kakao (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/Messenger (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/QQ (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/RenRen (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/WeChat (3.3.2)
-  - ShareSDK3/ShareSDKPlatforms/Yixin (3.3.2)
-  - ShareSDK3/ShareSDKUI (3.3.2)
+
 
 DEPENDENCIES:
-  - Alamofire (~> 3.4.1)
-  - CYLTabBarController (~> 1.5.4)
+  - Alamofire
+  - CYLTabBarController (~> 1.5.6)
   - FDFullscreenPopGesture (~> 1.1)
   - Kingfisher (~> 2.3.1)
-  - ShareSDK3
-  - ShareSDK3/ShareSDKPlatforms
-  - ShareSDK3/ShareSDKPlatforms/QQ
-  - ShareSDK3/ShareSDKPlatforms/SinaWeibo
-  - ShareSDK3/ShareSDKPlatforms/WeChat
-  - ShareSDK3/ShareSDKUI
+
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
   CYLTabBarController: 5b7328765e6103e1776ae296b8e009a3da0e4c4b
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   Kingfisher: 6d3fbada4829cbc7b89e883e8218c28afeb64e42
-  ShareSDK3: c76cb96eb38e079952b8157071486d945faa2df2
 
-PODFILE CHECKSUM: a8729499bad7ca590fa2f5930d8b587b2b54d7b4
+
+PODFILE CHECKSUM: 9b08efe53c6be1d2ddff96eb2a31135c8c3bef29
+
 
 COCOAPODS: 1.0.1
