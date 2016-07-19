@@ -21,28 +21,23 @@ class SmallDayViewController: UIViewController {
         button.backgroundColor = UIColor.redColor()
         button.addTarget(self, action: #selector(SmallDayViewController.btnClick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
-        
-        
+        button.title = "分享内容"
+
         setupNav()
         
         
     }
     
     func btnClick(button:UIButton){
-        print("----------")
+
+        // 1 创建分享参数
         
-//        创建分享参数
         let shareParemes = NSMutableDictionary()
-        var imageArray = NSArray()
-        imageArray = ["onepage","twopage"]
-        shareParemes.SSDKSetupShareParamsByText("分享内容", images: imageArray, url:  NSURL(string:"http://mob.com"), title: "分享标题", type:
+        shareParemes.SSDKSetupShareParamsByText("分享内容", images:UIImage(named:"collect.png"), url:  NSURL(string:"http://mob.com"), title: "分享标题", type:
             SSDKContentType.Image)
-        
-        
-//FIXME: 这里搞不定，也可能是因为模拟器测试的，真机因为那个tabbar报错，无法测试
 
         ShareSDK.showShareActionSheet(view, items:nil, shareParams: shareParemes) { (state : SSDKResponseState, type:SSDKPlatformType, userData : [NSObject : AnyObject]!, contentEntity :SSDKContentEntity!, error : NSError!, end:Bool) in
-            
+
             switch state{
             case SSDKResponseState.Success:
                 print("分享成功")
@@ -52,13 +47,9 @@ class SmallDayViewController: UIViewController {
                 print("分享取消")
             default:
                 break
-            }
-            
             
         }
         
-        
-
     }
     
     
