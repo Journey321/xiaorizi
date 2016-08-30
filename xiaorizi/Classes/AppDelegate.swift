@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
                     appInfo.SSDKSetupWeChatByAppId("wx4d09451d0633a5f8", appSecret: "7c17ed2fb647aff937f72f1a7dd4e966")
 
                 case SSDKPlatformType.TypeQQ:
-                    //                                    设置QQ应用信息
+                    // 设置QQ应用信息
                     appInfo.SSDKSetupQQByAppId("1103960594", appKey:"R90DhXXezSTn2aM8", authType:"")
 
                 default:

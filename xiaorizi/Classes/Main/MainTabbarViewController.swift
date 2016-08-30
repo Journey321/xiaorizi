@@ -7,7 +7,6 @@
 //
 
 import UIKit
-//FIXME: 真机测试这里报错
 
 import CYLTabBarController
 class MainTabbarViewController: CYLTabBarController {

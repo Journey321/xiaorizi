@@ -545,7 +545,7 @@
 				TargetAttributes = {
 					9C1D6DA11D2A43DF0081DC41 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = FSMCFXMWTQ;
+						DevelopmentTeam = U7HK54YF3X;
 					};
 					9C1D6DB51D2A43DF0081DC41 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -926,7 +926,7 @@
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.genju.66yxq;
+				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaorizi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
@@ -957,7 +957,7 @@
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/PlatformSDK/SinaWeiboSDK",
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/PlatformSDK/WeChatSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.genju.66yxq;
+				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaorizi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
