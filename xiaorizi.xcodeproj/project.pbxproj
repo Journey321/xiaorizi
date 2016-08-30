@@ -19,6 +19,7 @@
 		2C434FDB1D33FB92009BFF7C /* SmallDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */; };
 		2C434FDC1D33FB92009BFF7C /* TextImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */; };
 		2C434FE01D33FBF7009BFF7C /* JSSystemUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FDF1D33FBF7009BFF7C /* JSSystemUtil.swift */; };
+		2CA52AF71D50EB60007266BF /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA52AF61D50EB60007266BF /* NetWorkTool.swift */; };
 		87E68D961D3E148F006AED03 /* ShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E68D741D3E148F006AED03 /* ShareSDK.framework */; };
 		87E68D971D3E148F006AED03 /* ShareSDKExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E68D771D3E148F006AED03 /* ShareSDKExtension.framework */; };
 		87E68D981D3E148F006AED03 /* ShareSDKUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 87E68D781D3E148F006AED03 /* ShareSDKUI.bundle */; };
@@ -78,6 +79,7 @@
 		2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDayViewController.swift; sourceTree = "<group>"; };
 		2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageButton.swift; sourceTree = "<group>"; };
 		2C434FDF1D33FBF7009BFF7C /* JSSystemUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSSystemUtil.swift; sourceTree = "<group>"; };
+		2CA52AF61D50EB60007266BF /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		2EC14BE027A39FA5A880CA7A /* Pods_xiaoriziUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoriziUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9DA77EF6DB8E5DA9BBCDDE /* Pods-xiaoriziTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoriziTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoriziTests/Pods-xiaoriziTests.release.xcconfig"; sourceTree = "<group>"; };
 		56446FC616270F7D57246EA6 /* Pods-xiaoriziTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaoriziTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaoriziTests/Pods-xiaoriziTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		2C434FCE1D33FB92009BFF7C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				2CA52AF61D50EB60007266BF /* NetWorkTool.swift */,
 				2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */,
 			);
 			path = Tools;
@@ -765,6 +768,7 @@
 				2C434FE01D33FBF7009BFF7C /* JSSystemUtil.swift in Sources */,
 				2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */,
 				2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */,
+				2CA52AF71D50EB60007266BF /* NetWorkTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
