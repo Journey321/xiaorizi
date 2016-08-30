@@ -24,4 +24,8 @@
 //新浪微博SDK头文件
 #import "WeiboSDK.h"
 
+//布局
+#import "PureLayout.h"
+#import "UIView+LayoutMethods.h"
+
 #endif /* XiaoRiZiHeader_h */

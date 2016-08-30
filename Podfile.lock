@@ -1,25 +1,24 @@
 PODS:
-  - Alamofire (3.4.1)
+  - Alamofire (3.4.2)
   - CYLTabBarController (1.5.6)
   - FDFullscreenPopGesture (1.1)
   - Kingfisher (2.3.1)
-
+  - PureLayout (3.0.2)
 
 DEPENDENCIES:
   - Alamofire
   - CYLTabBarController (~> 1.5.6)
   - FDFullscreenPopGesture (~> 1.1)
   - Kingfisher (~> 2.3.1)
-
+  - PureLayout (~> 3.0.2)
 
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
   CYLTabBarController: 5b7328765e6103e1776ae296b8e009a3da0e4c4b
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   Kingfisher: 6d3fbada4829cbc7b89e883e8218c28afeb64e42
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-
-PODFILE CHECKSUM: 9b08efe53c6be1d2ddff96eb2a31135c8c3bef29
-
+PODFILE CHECKSUM: bf20606b783631dfac15b559681dfaed162cff17
 
 COCOAPODS: 1.0.1

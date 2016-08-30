@@ -9,14 +9,16 @@
 import UIKit
 
 class MineViewController: UIViewController {
-
+//    背景
+    var bgScrollView : UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "我的"
         self.view.backgroundColor = UIColor.yellowColor()
 
         setupNav()
-    
+        background()
     }
 
     
@@ -26,6 +28,39 @@ class MineViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem.barButtonItemWithRightIcon("pcenter_1", highlightedIcon: "", target: self, action: #selector(MineViewController.personInfoBtnClick))
         
     }
+    
+    
+    func background(){
+        
+        let button = UIButton(type: UIButtonType.Custom)
+        button.frame = CGRectMake(100, 100, 100, 30)
+        button.backgroundColor = UIColor.redColor()
+        self.view.addSubview(button)
+        
+        
+        bgScrollView = UIScrollView.init();
+        self.view.addSubview(bgScrollView)
+        bgScrollView.backgroundColor = UIColor.orangeColor()
+        bgScrollView.translatesAutoresizingMaskIntoConstraints = false;
+        
+//        布局
+        bgScrollView.autoPinEdgeToSuperviewEdge(.Top, withInset: 0)
+        bgScrollView.autoPinEdgeToSuperviewEdge(.Left, withInset: 0)
+        bgScrollView.autoPinEdgeToSuperviewEdge(.Bottom, withInset: 0)
+        bgScrollView.autoPinEdgeToSuperviewEdge(.Right, withInset: 0)
+        
+//        使大小和self.view的大小相同
+//        bgScrollView.autoMatchDimension(.Width, toDimension: .Width, ofView: self.view)
+//        bgScrollView.autoMatchDimension(.Height, toDimension: .Height, ofView: self.view)
+        
+//        设置控件大小
+//        let size = CGSizeMake(100, 100);
+//        bgScrollView.autoSetDimensionsToSize(size)
+        
+        bgScrollView.contentSize = CGSizeMake(self.view.width(), self.view.height() * 1.5)
+        
+    }
+    
     // MARK: 导航栏按钮点击事件
     func privateMsgBtnClick() {
         

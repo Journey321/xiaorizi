@@ -39,6 +39,7 @@
 		87E68DA61D3E157A006AED03 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DB1D3C753400606B56 /* JavaScriptCore.framework */; };
 		87E68DA71D3E1AA8006AED03 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161D71D3C752700606B56 /* libsqlite3.tbd */; };
 		8A8357653CC9CB962B25CF2A /* Pods_xiaorizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */; };
+		9C094A831D758704009CE7AD /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C094A821D758704009CE7AD /* UIView+LayoutMethods.m */; };
 		9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */; };
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
@@ -114,6 +115,8 @@
 		87E68D951D3E148F006AED03 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		8C06AE0694EBE4749083AF79 /* Pods_xiaoriziTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoriziTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
+		9C094A811D758704009CE7AD /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		9C094A821D758704009CE7AD /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		9C1D6DA21D2A43DF0081DC41 /* xiaorizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaorizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DAA1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1D6DAF1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -200,6 +203,7 @@
 				2C434FCB1D33FB92009BFF7C /* Resource */,
 				2C434FCC1D33FB92009BFF7C /* SmallDay */,
 				2C434FCE1D33FB92009BFF7C /* Tools */,
+				9C094A801D7586C6009CE7AD /* OC-File */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -402,6 +406,16 @@
 				87E68D951D3E148F006AED03 /* ShareSDKConnector.framework */,
 			);
 			path = Required;
+			sourceTree = "<group>";
+		};
+		9C094A801D7586C6009CE7AD /* OC-File */ = {
+			isa = PBXGroup;
+			children = (
+				9C094A811D758704009CE7AD /* UIView+LayoutMethods.h */,
+				9C094A821D758704009CE7AD /* UIView+LayoutMethods.m */,
+			);
+			name = "OC-File";
+			path = "Tools/OC-File";
 			sourceTree = "<group>";
 		};
 		9C1D6D991D2A43DF0081DC41 = {
@@ -769,6 +783,7 @@
 				2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */,
 				2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */,
 				2CA52AF71D50EB60007266BF /* NetWorkTool.swift in Sources */,
+				9C094A831D758704009CE7AD /* UIView+LayoutMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,6 +937,7 @@
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/PlatformSDK/QQSDK",
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/Required",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = xiaorizi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -934,6 +950,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/**";
 			};
 			name = Debug;
 		};
@@ -953,6 +970,7 @@
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/PlatformSDK/QQSDK",
 					"$(PROJECT_DIR)/xiaorizi/Classes/Library/ShareSDK/Support/Required",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = xiaorizi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -965,6 +983,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/**";
 			};
 			name = Release;
 		};
