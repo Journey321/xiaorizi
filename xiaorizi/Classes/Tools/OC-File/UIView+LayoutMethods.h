@@ -11,8 +11,10 @@
 #import <UIKit/UIKit.h>
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 
-#define SCREEN_WIDTH ([[UIScreen mainScreen]bounds].size.width)
-#define SCREEN_HEIGHT ([[UIScreen mainScreen]bounds].size.height)
+#define NAVIGATION_BAR_HEIGHT 44
+#define STATUS_BAR_HEIGHT 20
+#define TAB_BAR_HEIGHT 49
+
 #define SCREEN_WITHOUT_STATUS_HEIGHT (SCREEN_HEIGHT - [[UIApplication sharedApplication] statusBarFrame].size.height)
 
 @interface UIView (LayoutMethods)
