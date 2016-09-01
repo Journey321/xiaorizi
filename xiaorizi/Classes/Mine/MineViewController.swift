@@ -23,7 +23,7 @@ class MineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "我的"
-        self.view.backgroundColor = UIColor.yellowColor()
+        self.view.backgroundColor = UIColor.init(rgbByFFFFFF: 0xf9f9f9)
 
         setupNav()
         background()
@@ -43,16 +43,15 @@ class MineViewController: UIViewController {
 //        背景scrollView
         bgScrollView = UIScrollView.init();
         self.view.addSubview(bgScrollView)
-        bgScrollView.backgroundColor = UIColor.orangeColor()
-        bgScrollView.translatesAutoresizingMaskIntoConstraints = false;
-        
+        bgScrollView.backgroundColor = UIColor.init(rgbByFFFFFF: 0xf9f9f9)
+        bgScrollView.translatesAutoresizingMaskIntoConstraints = false
+        bgScrollView.bounces = false
 //        布局
         bgScrollView.autoPinEdgeToSuperviewEdge(.Top, withInset: 0)
         bgScrollView.autoPinEdgeToSuperviewEdge(.Left, withInset: 0)
         bgScrollView.autoPinEdgeToSuperviewEdge(.Bottom, withInset: 0)
         bgScrollView.autoPinEdgeToSuperviewEdge(.Right, withInset: 0)
-        bgScrollView.contentSize = CGSizeMake(self.view.width(), self.view.height() * 1.5)
-        
+        bgScrollView.contentSize = CGSizeMake(self.view.width(), kScreenHeight*(590/667))
         topBGView()
         categoryBGView()
 
@@ -156,8 +155,8 @@ class MineViewController: UIViewController {
     
     func categoryBGView(){
         
-      
-        categoryView.backgroundColor = UIColor.whiteColor()
+//       类别背景view
+        categoryView.backgroundColor = UIColor.init(rgbByFFFFFF: 0xf9f9f9)
         bgScrollView.addSubview(categoryView)
         
         let categorySize = CGSizeMake(kScreenWidth, kScreenHeight*(300/667))
@@ -165,27 +164,39 @@ class MineViewController: UIViewController {
         categoryView.autoPinEdgeToSuperviewEdge(ALEdge.Leading, withInset: 0)
         categoryView.autoPinEdge(ALEdge.Top, toEdge: ALEdge.Bottom, ofView: topImageView, withOffset: 0)
         
-        let nameArray : NSArray = ["11","22","33","11","22","33"];
+        
+        let nameArray : NSArray = ["消息","订单","想去","收藏","我的推荐","申请店主"];
+        let iconArray : NSArray = ["news_3","orderform","titleshare_1","plike_1","sendpictures_1","shop"];
+        
         let btnWidth:CGFloat = (kScreenWidth - 1)/2.0
         let btnHeight:CGFloat = 100;
         
         for i in 0 ... nameArray.count-1  {
             
             let XX:CGFloat = CGFloat(i%2)
-            let YY:CGFloat = CGFloat(i/3)
+            let YY:CGFloat = CGFloat(i/2)
             let interval:CGFloat = 1
-//            let YYY = i/3
-            let XXX = i%2
-
-            print("-----%d----%d--->%d",i,XXX,XXX)
             let x = XX * (interval + btnWidth)
             let y = YY * (interval + btnHeight);
-            
-            let btn = UIButton.init(type: UIButtonType.Custom)
+            let iconName = iconArray.objectAtIndex(i)
+            let btn = MyCustomBtn.init(type: UIButtonType.Custom)
             btn.frame = CGRectMake(x, y, btnWidth, btnHeight)
-            btn.backgroundColor = UIColor.blackColor()
+            btn.nameLable.text = nameArray.objectAtIndex(i) as? String
+            btn.iconImg.image = UIImage.init(named: iconName as! String)
             categoryView.addSubview(btn)
+            btn.tag = i + 1;
+            btn.addTarget(self, action: #selector( MineViewController.orderBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         }
+        
+        let bottomLable = UILabel.init()
+        bgScrollView.addSubview(bottomLable)
+        bottomLable.text = "~发现美好生活~";
+        bottomLable.textColor = UIColor.init(rgbByFFFFFF: 0xb7b7b7)
+        bottomLable.font = UIFont.systemFontOfSize(14)
+        bottomLable.textAlignment = NSTextAlignment.Center
+        let bottomSize = CGSizeMake(kScreenWidth, 20)
+        bottomLable.autoSetDimensionsToSize(bottomSize)
+        bottomLable.autoPinEdge(.Top, toEdge: .Bottom, ofView: categoryView, withOffset: 30)
         
         
     }
@@ -204,6 +215,12 @@ class MineViewController: UIViewController {
     func editBtnClick(){
         print("---编辑资料----")
         
+    }
+    
+    func orderBtnClick(btn:UIButton){
+        
+        print("-----------",btn.tag)
+    
     }
     
     

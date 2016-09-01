@@ -17,15 +17,15 @@ let  APP_VERSION = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionSt
  /// 获取App名称
 let  APP_NAME = NSBundle.mainBundle().infoDictionary!["CFBundleDisplayName"]
  /// 判断是否是IOS7
-let  IOS7:Bool=SystemVersion >= 7.0 ? true : false
+let  IOS7:Bool = SystemVersion >= 7.0 ? true : false
  /// 判断是否是IOS8
-let  IOS8:Bool=SystemVersion >= 8.0 ? true : false
+let  IOS8:Bool = SystemVersion >= 8.0 ? true : false
  /// 判断是否是IOS9
-let  IOS9:Bool=SystemVersion >= 9.0 ? true : false
+let  IOS9:Bool = SystemVersion >= 9.0 ? true : false
  /// 获取屏幕的宽高
-public let kScreenBounds=UIScreen.mainScreen().bounds
+public let kScreenBounds = UIScreen.mainScreen().bounds
 public let kScreenHeight = UIScreen.mainScreen().bounds.size.height
-public let kScreenWidth = UIScreen.mainScreen().bounds.size.width
+public let kScreenWidth  = UIScreen.mainScreen().bounds.size.width
  /// 获取系统window
 public let kWindow = UIApplication.sharedApplication().keyWindow
  /// 判断当前设备
@@ -34,10 +34,16 @@ let IS_IPHONE_5 = fabs(Double(kScreenHeight) - Double(568))<DBL_EPSILON
 let IS_IPHONE_6 = fabs(Double(kScreenHeight) - Double(667))<DBL_EPSILON
 let IS_IPHONE_6P = fabs(Double(kScreenHeight) - Double(736))<DBL_EPSILON
 
-
+//func RGBCOKOR(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) { UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)}
 struct theme {
     ///  APP导航条barButtonItem文字大小
     static let navItemFont: UIFont = UIFont.systemFontOfSize(16)
     ///  APP导航条titleFont文字大小
     static let navTitleFont: UIFont = UIFont.systemFontOfSize(18)
 }
+
+
+
+
+
+

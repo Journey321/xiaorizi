@@ -15,6 +15,11 @@
 #define STATUS_BAR_HEIGHT 20
 #define TAB_BAR_HEIGHT 49
 
+#define UIColorFromRGBA(rgbValue, a) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:a]
+
 #define SCREEN_WITHOUT_STATUS_HEIGHT (SCREEN_HEIGHT - [[UIApplication sharedApplication] statusBarFrame].size.height)
 
 @interface UIView (LayoutMethods)
