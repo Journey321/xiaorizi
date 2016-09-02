@@ -47,6 +47,8 @@
 		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
 		9C7D90731D77D87D00A7A9E0 /* MyCustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D90721D77D87D00A7A9E0 /* MyCustomBtn.swift */; };
 		9C7D90771D791A9400A7A9E0 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D90761D791A9400A7A9E0 /* MyCenterViewController.swift */; };
+		9C7D90791D796B9000A7A9E0 /* MyCenterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D90781D796B9000A7A9E0 /* MyCenterHeaderCell.swift */; };
+		9C7D907B1D79712800A7A9E0 /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D907A1D79712800A7A9E0 /* ChangeNameViewController.swift */; };
 		AB727795EFD4B70E361AE6CE /* Pods_xiaoriziTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C06AE0694EBE4749083AF79 /* Pods_xiaoriziTests.framework */; };
 		E180DF18FBE17BFDFD165409 /* Pods_xiaoriziUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC14BE027A39FA5A880CA7A /* Pods_xiaoriziUITests.framework */; };
 /* End PBXBuildFile section */
@@ -132,6 +134,8 @@
 		9C779C8D1D336BFE0068EF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C7D90721D77D87D00A7A9E0 /* MyCustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomBtn.swift; sourceTree = "<group>"; };
 		9C7D90761D791A9400A7A9E0 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
+		9C7D90781D796B9000A7A9E0 /* MyCenterHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterHeaderCell.swift; sourceTree = "<group>"; };
+		9C7D907A1D79712800A7A9E0 /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
 		9CA161D41D3C74DA00606B56 /* XiaoRiZiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XiaoRiZiHeader.h; path = ../XiaoRiZiHeader.h; sourceTree = "<group>"; };
 		9CA161D51D3C751C00606B56 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9CA161D71D3C752700606B56 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -245,6 +249,8 @@
 				2C434FC81D33FB92009BFF7C /* MineViewController.swift */,
 				9C7D90761D791A9400A7A9E0 /* MyCenterViewController.swift */,
 				9C7D90721D77D87D00A7A9E0 /* MyCustomBtn.swift */,
+				9C7D90781D796B9000A7A9E0 /* MyCenterHeaderCell.swift */,
+				9C7D907A1D79712800A7A9E0 /* ChangeNameViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -785,11 +791,13 @@
 				2C434FD31D33FB92009BFF7C /* UIBarButtonItem+Util.swift in Sources */,
 				2C434FDA1D33FB92009BFF7C /* PlayViewController.swift in Sources */,
 				2C434FDC1D33FB92009BFF7C /* TextImageButton.swift in Sources */,
+				9C7D90791D796B9000A7A9E0 /* MyCenterHeaderCell.swift in Sources */,
 				2C434FE01D33FBF7009BFF7C /* JSSystemUtil.swift in Sources */,
 				2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */,
 				9C7D90731D77D87D00A7A9E0 /* MyCustomBtn.swift in Sources */,
 				2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */,
 				9C7D90771D791A9400A7A9E0 /* MyCenterViewController.swift in Sources */,
+				9C7D907B1D79712800A7A9E0 /* ChangeNameViewController.swift in Sources */,
 				2CA52AF71D50EB60007266BF /* NetWorkTool.swift in Sources */,
 				9C094A831D758704009CE7AD /* UIView+LayoutMethods.m in Sources */,
 			);
