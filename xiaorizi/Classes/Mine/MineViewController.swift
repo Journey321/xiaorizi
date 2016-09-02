@@ -16,7 +16,7 @@ class MineViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
-//        self.hidesBottomBarWhenPushed = true
+        self.tabBarController?.tabBar.hidden = false
         self.navigationController?.navigationBarHidden = true
     }
     
@@ -87,9 +87,10 @@ class MineViewController: UIViewController {
         headerBtn.clipsToBounds = true;
         headerBtn.layer.cornerRadius = 50;
         headerBtn.setImage(UIImage.init(named: "lhshare0"), forState: UIControlState.Normal)
-        
+        headerBtn.addTarget(self, action:#selector(MineViewController.editBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
+
 //        布局
-        let btnWidth:CGFloat = 100.0;
+        let btnWidth:CGFloat = kScreenHeight*(100.0/667);
         let headerSize = CGSizeMake(kScreenWidth * (btnWidth / 375), kScreenHeight * (btnWidth / 667));
         headerBtn.autoSetDimensionsToSize(headerSize);
         headerBtn.autoPinEdgeToSuperviewEdge(ALEdge.Leading, withInset: (kScreenWidth - kScreenWidth * (btnWidth / 375)) / 2)
@@ -121,7 +122,6 @@ class MineViewController: UIViewController {
         editBtn.addTarget(self, action:#selector(MineViewController.editBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         
         
-        
         let editLable = UILabel.init()
         topImageView.addSubview(editLable)
         editLable.textColor = UIColor.whiteColor()
@@ -145,7 +145,6 @@ class MineViewController: UIViewController {
         
 //        跟lable对齐
         editIconImg.autoAlignAxis(ALAxis.Horizontal, toSameAxisOfView: editLable)
-        
 //        跟lable的距离 withOffset
         editIconImg.autoPinEdge(ALEdge.Trailing, toEdge: ALEdge.Leading, ofView: editLable, withOffset: 0, relation: NSLayoutRelation.GreaterThanOrEqual)
         editLable.autoPinEdge(ALEdge.Top, toEdge: ALEdge.Bottom, ofView: topImageView, withOffset: -30)
@@ -188,9 +187,11 @@ class MineViewController: UIViewController {
             btn.addTarget(self, action: #selector( MineViewController.orderBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         }
         
+        
+//        底部文字
         let bottomLable = UILabel.init()
         bgScrollView.addSubview(bottomLable)
-        bottomLable.text = "~发现美好生活~";
+        bottomLable.text = "~ 发现美好生活 ~";
         bottomLable.textColor = UIColor.init(rgbByFFFFFF: 0xb7b7b7)
         bottomLable.font = UIFont.systemFontOfSize(14)
         bottomLable.textAlignment = NSTextAlignment.Center
@@ -200,7 +201,6 @@ class MineViewController: UIViewController {
         
         
     }
-    
     
     
     
@@ -214,6 +214,8 @@ class MineViewController: UIViewController {
     
     func editBtnClick(){
         print("---编辑资料----")
+        let myCenter = MyCenterViewController()
+        self.navigationController?.pushViewController(myCenter, animated: true)
         
     }
     

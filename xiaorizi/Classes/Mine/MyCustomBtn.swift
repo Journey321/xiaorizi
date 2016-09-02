@@ -36,7 +36,6 @@ class MyCustomBtn: UIButton {
         nameLable.autoSetDimensionsToSize(nameSize)
         nameLable.autoPinEdgeToSuperviewEdge(.Left, withInset: 0)
         nameLable.autoPinEdge(.Top, toEdge:.Bottom, ofView: iconImg, withOffset: 10)
-        print("输出宽度",self.width())
         
         
     }
