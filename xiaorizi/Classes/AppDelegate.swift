@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
 
         ShareSDK.registerApp("845cb98583e7",
 
-            activePlatforms: [SSDKPlatformType.TypeWechat.rawValue,SSDKPlatformType.TypeQQ.rawValue],
+            activePlatforms: [SSDKPlatformType.TypeWechat.rawValue],//SSDKPlatformType.TypeQQ.rawValue
 
             onImport: {(platform : SSDKPlatformType) -> Void in
 
@@ -35,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
 
                 case SSDKPlatformType.TypeWechat:
                    ShareSDKConnector.connectWeChat(WXApi.classForCoder())
-                case SSDKPlatformType.TypeQQ:
-                    ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
-                    break
+//                case SSDKPlatformType.TypeQQ:
+//                    ShareSDKConnector.connectQQ(QQApiInterface.classForCoder(), tencentOAuthClass: TencentOAuth.classForCoder())
+//                    break
                 default:
                     break
                 }
@@ -50,9 +50,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
                     //设置微信应用信息
                     appInfo.SSDKSetupWeChatByAppId("wx4d09451d0633a5f8", appSecret: "7c17ed2fb647aff937f72f1a7dd4e966")
 
-                case SSDKPlatformType.TypeQQ:
-                    // 设置QQ应用信息
-                    appInfo.SSDKSetupQQByAppId("1103960594", appKey:"R90DhXXezSTn2aM8", authType:"")
+//                case SSDKPlatformType.TypeQQ:
+//                    // 设置QQ应用信息
+//                    appInfo.SSDKSetupQQByAppId("1103960594", appKey:"R90DhXXezSTn2aM8", authType:"")
 
                 default:
                     break
