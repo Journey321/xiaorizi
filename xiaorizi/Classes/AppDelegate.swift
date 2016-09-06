@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate  {
     
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
         // 全局设置导航栏样式
         setupNavStyle(application)
         customizeInterface()

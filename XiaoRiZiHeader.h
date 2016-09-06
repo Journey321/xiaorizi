@@ -6,6 +6,9 @@
 //  Copyright © 2016年 zhike. All rights reserved.
 //
 
+
+
+
 #ifndef XiaoRiZiHeader_h
 #define XiaoRiZiHeader_h
 
@@ -27,5 +30,11 @@
 //布局
 #import "PureLayout.h"
 #import "UIView+LayoutMethods.h"
+
+//提示框
+#import "MBProgressHUD.h"
+
+
+
 
 #endif /* XiaoRiZiHeader_h */

@@ -14,7 +14,6 @@
 		2C434FD51D33FB92009BFF7C /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC11D33FB92009BFF7C /* UIView+Util.swift */; };
 		2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC31D33FB92009BFF7C /* FindViewController.swift */; };
 		2C434FD81D33FB92009BFF7C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC61D33FB92009BFF7C /* MainTabbarViewController.swift */; };
-		2C434FD91D33FB92009BFF7C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC81D33FB92009BFF7C /* MineViewController.swift */; };
 		2C434FDA1D33FB92009BFF7C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCA1D33FB92009BFF7C /* PlayViewController.swift */; };
 		2C434FDB1D33FB92009BFF7C /* SmallDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */; };
 		2C434FDC1D33FB92009BFF7C /* TextImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */; };
@@ -39,16 +38,19 @@
 		87E68DA61D3E157A006AED03 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DB1D3C753400606B56 /* JavaScriptCore.framework */; };
 		87E68DA71D3E1AA8006AED03 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161D71D3C752700606B56 /* libsqlite3.tbd */; };
 		8A8357653CC9CB962B25CF2A /* Pods_xiaorizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */; };
-		9C094A831D758704009CE7AD /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C094A821D758704009CE7AD /* UIView+LayoutMethods.m */; };
 		9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */; };
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
 		9C1D6DC61D2A43DF0081DC41 /* xiaoriziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */; };
 		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
-		9C7D90731D77D87D00A7A9E0 /* MyCustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D90721D77D87D00A7A9E0 /* MyCustomBtn.swift */; };
-		9C7D90771D791A9400A7A9E0 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D90761D791A9400A7A9E0 /* MyCenterViewController.swift */; };
-		9C7D90791D796B9000A7A9E0 /* MyCenterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D90781D796B9000A7A9E0 /* MyCenterHeaderCell.swift */; };
-		9C7D907B1D79712800A7A9E0 /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7D907A1D79712800A7A9E0 /* ChangeNameViewController.swift */; };
+		9CF7D7E31D7D4595008B0AA8 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7E21D7D4595008B0AA8 /* UIView+LayoutMethods.m */; };
+		9CF7D7E81D7D4A88008B0AA8 /* NSString+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7E71D7D4A88008B0AA8 /* NSString+Util.swift */; };
+		9CF7D7F81D7E66F9008B0AA8 /* ChangeNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7F01D7E66F9008B0AA8 /* ChangeNameViewController.swift */; };
+		9CF7D7F91D7E66F9008B0AA8 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7F11D7E66F9008B0AA8 /* MineViewController.swift */; };
+		9CF7D7FA1D7E66F9008B0AA8 /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7F21D7E66F9008B0AA8 /* MyCenterViewController.swift */; };
+		9CF7D7FB1D7E66F9008B0AA8 /* MyCenterHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7F61D7E66F9008B0AA8 /* MyCenterHeaderCell.swift */; };
+		9CF7D7FC1D7E66F9008B0AA8 /* MyCustomBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7F71D7E66F9008B0AA8 /* MyCustomBtn.swift */; };
+		9CF7D7FE1D7E6734008B0AA8 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7FD1D7E6733008B0AA8 /* UserManager.swift */; };
 		AB727795EFD4B70E361AE6CE /* Pods_xiaoriziTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C06AE0694EBE4749083AF79 /* Pods_xiaoriziTests.framework */; };
 		E180DF18FBE17BFDFD165409 /* Pods_xiaoriziUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC14BE027A39FA5A880CA7A /* Pods_xiaoriziUITests.framework */; };
 /* End PBXBuildFile section */
@@ -79,7 +81,6 @@
 		2C434FC11D33FB92009BFF7C /* UIView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
 		2C434FC31D33FB92009BFF7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		2C434FC61D33FB92009BFF7C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
-		2C434FC81D33FB92009BFF7C /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		2C434FCA1D33FB92009BFF7C /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDayViewController.swift; sourceTree = "<group>"; };
 		2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextImageButton.swift; sourceTree = "<group>"; };
@@ -119,8 +120,6 @@
 		87E68D951D3E148F006AED03 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		8C06AE0694EBE4749083AF79 /* Pods_xiaoriziTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoriziTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
-		9C094A811D758704009CE7AD /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
-		9C094A821D758704009CE7AD /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		9C1D6DA21D2A43DF0081DC41 /* xiaorizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaorizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DAA1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1D6DAF1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,10 +131,6 @@
 		9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoriziUITests.swift; sourceTree = "<group>"; };
 		9C1D6DC71D2A43DF0081DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C779C8D1D336BFE0068EF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9C7D90721D77D87D00A7A9E0 /* MyCustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomBtn.swift; sourceTree = "<group>"; };
-		9C7D90761D791A9400A7A9E0 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
-		9C7D90781D796B9000A7A9E0 /* MyCenterHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterHeaderCell.swift; sourceTree = "<group>"; };
-		9C7D907A1D79712800A7A9E0 /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
 		9CA161D41D3C74DA00606B56 /* XiaoRiZiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XiaoRiZiHeader.h; path = ../XiaoRiZiHeader.h; sourceTree = "<group>"; };
 		9CA161D51D3C751C00606B56 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		9CA161D71D3C752700606B56 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -154,6 +149,15 @@
 		9CA161F01D3C75BB00606B56 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDKConnector.framework; path = Pods/ShareSDK3/ShareSDK/Support/Required/ShareSDKConnector.framework; sourceTree = "<group>"; };
 		9CA161F41D3C7DF800606B56 /* ShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ShareSDK.framework; path = Pods/ShareSDK3/ShareSDK/ShareSDK.framework; sourceTree = "<group>"; };
 		9CA161FD1D3C7FC500606B56 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MOBFoundation.framework; path = Pods/ShareSDK3/MOBFoundation.framework; sourceTree = "<group>"; };
+		9CF7D7E11D7D4595008B0AA8 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		9CF7D7E21D7D4595008B0AA8 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		9CF7D7E71D7D4A88008B0AA8 /* NSString+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Util.swift"; sourceTree = "<group>"; };
+		9CF7D7F01D7E66F9008B0AA8 /* ChangeNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeNameViewController.swift; sourceTree = "<group>"; };
+		9CF7D7F11D7E66F9008B0AA8 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		9CF7D7F21D7E66F9008B0AA8 /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
+		9CF7D7F61D7E66F9008B0AA8 /* MyCenterHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterHeaderCell.swift; sourceTree = "<group>"; };
+		9CF7D7F71D7E66F9008B0AA8 /* MyCustomBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomBtn.swift; sourceTree = "<group>"; };
+		9CF7D7FD1D7E6733008B0AA8 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaorizi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -206,8 +210,8 @@
 				2C434FBD1D33FB92009BFF7C /* Extension */,
 				2C434FC21D33FB92009BFF7C /* Find */,
 				2C434FC51D33FB92009BFF7C /* Main */,
-				2C434FC71D33FB92009BFF7C /* Mine */,
 				2C434FC91D33FB92009BFF7C /* Play */,
+				9CF7D7EE1D7E66F9008B0AA8 /* Mine */,
 				2C434FCB1D33FB92009BFF7C /* Resource */,
 				2C434FCC1D33FB92009BFF7C /* SmallDay */,
 				2C434FCE1D33FB92009BFF7C /* Tools */,
@@ -223,6 +227,7 @@
 				2C434FBF1D33FB92009BFF7C /* UIBarButtonItem+Util.swift */,
 				2C434FC01D33FB92009BFF7C /* UIColor+Util.swift */,
 				2C434FC11D33FB92009BFF7C /* UIView+Util.swift */,
+				9CF7D7E71D7D4A88008B0AA8 /* NSString+Util.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -241,18 +246,6 @@
 				2C434FC61D33FB92009BFF7C /* MainTabbarViewController.swift */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		2C434FC71D33FB92009BFF7C /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				2C434FC81D33FB92009BFF7C /* MineViewController.swift */,
-				9C7D90761D791A9400A7A9E0 /* MyCenterViewController.swift */,
-				9C7D90721D77D87D00A7A9E0 /* MyCustomBtn.swift */,
-				9C7D90781D796B9000A7A9E0 /* MyCenterHeaderCell.swift */,
-				9C7D907A1D79712800A7A9E0 /* ChangeNameViewController.swift */,
-			);
-			path = Mine;
 			sourceTree = "<group>";
 		};
 		2C434FC91D33FB92009BFF7C /* Play */ = {
@@ -283,6 +276,7 @@
 			children = (
 				2CA52AF61D50EB60007266BF /* NetWorkTool.swift */,
 				2C434FCF1D33FB92009BFF7C /* TextImageButton.swift */,
+				9CF7D7FD1D7E6733008B0AA8 /* UserManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -423,8 +417,8 @@
 		9C094A801D7586C6009CE7AD /* OC-File */ = {
 			isa = PBXGroup;
 			children = (
-				9C094A811D758704009CE7AD /* UIView+LayoutMethods.h */,
-				9C094A821D758704009CE7AD /* UIView+LayoutMethods.m */,
+				9CF7D7E11D7D4595008B0AA8 /* UIView+LayoutMethods.h */,
+				9CF7D7E21D7D4595008B0AA8 /* UIView+LayoutMethods.m */,
 			);
 			name = "OC-File";
 			path = "Tools/OC-File";
@@ -482,6 +476,51 @@
 				9C1D6DC71D2A43DF0081DC41 /* Info.plist */,
 			);
 			path = xiaoriziUITests;
+			sourceTree = "<group>";
+		};
+		9CF7D7EE1D7E66F9008B0AA8 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9CF7D7EF1D7E66F9008B0AA8 /* controller */,
+				9CF7D7F31D7E66F9008B0AA8 /* lib */,
+				9CF7D7F41D7E66F9008B0AA8 /* model */,
+				9CF7D7F51D7E66F9008B0AA8 /* view */,
+			);
+			name = Mine;
+			path = Play/Mine;
+			sourceTree = "<group>";
+		};
+		9CF7D7EF1D7E66F9008B0AA8 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9CF7D7F11D7E66F9008B0AA8 /* MineViewController.swift */,
+				9CF7D7F21D7E66F9008B0AA8 /* MyCenterViewController.swift */,
+				9CF7D7F01D7E66F9008B0AA8 /* ChangeNameViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9CF7D7F31D7E66F9008B0AA8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9CF7D7F41D7E66F9008B0AA8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9CF7D7F51D7E66F9008B0AA8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9CF7D7F61D7E66F9008B0AA8 /* MyCenterHeaderCell.swift */,
+				9CF7D7F71D7E66F9008B0AA8 /* MyCustomBtn.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		FCC66C3802C363E99D97C7DC /* Pods */ = {
@@ -784,22 +823,24 @@
 			files = (
 				2C434FD21D33FB92009BFF7C /* NSDate+Util.swift in Sources */,
 				2C434FD81D33FB92009BFF7C /* MainTabbarViewController.swift in Sources */,
-				2C434FD91D33FB92009BFF7C /* MineViewController.swift in Sources */,
+				9CF7D7E81D7D4A88008B0AA8 /* NSString+Util.swift in Sources */,
 				2C434FD51D33FB92009BFF7C /* UIView+Util.swift in Sources */,
 				2C434FDB1D33FB92009BFF7C /* SmallDayViewController.swift in Sources */,
 				2C434FD11D33FB92009BFF7C /* AppDelegate.swift in Sources */,
 				2C434FD31D33FB92009BFF7C /* UIBarButtonItem+Util.swift in Sources */,
+				9CF7D7FC1D7E66F9008B0AA8 /* MyCustomBtn.swift in Sources */,
 				2C434FDA1D33FB92009BFF7C /* PlayViewController.swift in Sources */,
 				2C434FDC1D33FB92009BFF7C /* TextImageButton.swift in Sources */,
-				9C7D90791D796B9000A7A9E0 /* MyCenterHeaderCell.swift in Sources */,
+				9CF7D7E31D7D4595008B0AA8 /* UIView+LayoutMethods.m in Sources */,
 				2C434FE01D33FBF7009BFF7C /* JSSystemUtil.swift in Sources */,
+				9CF7D7F91D7E66F9008B0AA8 /* MineViewController.swift in Sources */,
 				2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */,
-				9C7D90731D77D87D00A7A9E0 /* MyCustomBtn.swift in Sources */,
+				9CF7D7FB1D7E66F9008B0AA8 /* MyCenterHeaderCell.swift in Sources */,
+				9CF7D7F81D7E66F9008B0AA8 /* ChangeNameViewController.swift in Sources */,
 				2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */,
-				9C7D90771D791A9400A7A9E0 /* MyCenterViewController.swift in Sources */,
-				9C7D907B1D79712800A7A9E0 /* ChangeNameViewController.swift in Sources */,
+				9CF7D7FA1D7E66F9008B0AA8 /* MyCenterViewController.swift in Sources */,
+				9CF7D7FE1D7E6734008B0AA8 /* UserManager.swift in Sources */,
 				2CA52AF71D50EB60007266BF /* NetWorkTool.swift in Sources */,
-				9C094A831D758704009CE7AD /* UIView+LayoutMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,7 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
         super.viewDidLoad()
         
         self.title = "个人中心"
-        self.view.backgroundColor = UIColor.orangeColor()
+        self.view.backgroundColor = UIColor.whiteColor()
         
         tableView.backgroundColor = UIColor.blueColor()
         self.view.addSubview(tableView)
@@ -48,7 +48,28 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
         subTittle = NSMutableArray.init(array: ["豆豆的皮豆","","添加邮箱","绑定手机号"])
         placeholderArray = NSMutableArray.init(array: ["请输入您的昵称","请输入您的签名","请输入您的邮箱","请输入手机号"])
         navigationTittleArray = NSMutableArray.init(array: ["用户名","签名","邮箱","手机号"])
-
+        
+        
+//        退出登录
+        let exitBtn = UIButton.init(type: UIButtonType.Custom)
+        self.view.addSubview(exitBtn)
+        exitBtn.backgroundColor = UIColor.init(rgbByFFFFFF: 0xf45633)
+        exitBtn.setTitle("退出登录", forState: UIControlState.Normal)
+        exitBtn.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        exitBtn.titleLabel?.font = UIFont.systemFontOfSize(16)
+        exitBtn.layer.masksToBounds = true
+        exitBtn.layer.cornerRadius = 10;
+        let exitSize = CGSizeMake(kScreenWidth - 60, 40)
+        exitBtn.autoSetDimensionsToSize(exitSize)
+        exitBtn.autoPinEdgeToSuperviewEdge(.Left, withInset: 30)
+        exitBtn.autoPinEdge(.Top, toEdge: .Bottom, ofView: tableView, withOffset: 30)
+        
+        exitBtn.addTarget(self, action: #selector(MyCenterViewController.exitBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
+    }
+    
+    
+    func exitBtnClick(){
+        print("-----退出------")
     }
     
     
@@ -78,7 +99,7 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
         cell.detailTextLabel?.text = subTittle.objectAtIndex(indexPath.row - 1) as? String
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         cell.selectionStyle = UITableViewCellSelectionStyle.None;
-
+        cell.tag = indexPath.row + 1;
         return cell;
     }
     
@@ -89,9 +110,16 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
             let vc = ChangeNameViewController()
             vc.navigationTittle = navigationTittleArray.objectAtIndex(indexPath.row - 1) as! String
             vc.placeholderStr = placeholderArray.objectAtIndex(indexPath.row - 1) as! String
+            vc.EditType = indexPath.row;
+            vc.editChange = { (title:String) in
+            
+                let cell = tableView.viewWithTag(indexPath.row + 1)as! UITableViewCell
+                cell.detailTextLabel?.text = title
+            }
             self.navigationController?.pushViewController(vc, animated: true)
         }
    
+        
         
     }
 

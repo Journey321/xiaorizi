@@ -51,7 +51,7 @@ class MineViewController: UIViewController {
         bgScrollView.autoPinEdgeToSuperviewEdge(.Left, withInset: 0)
         bgScrollView.autoPinEdgeToSuperviewEdge(.Bottom, withInset: 0)
         bgScrollView.autoPinEdgeToSuperviewEdge(.Right, withInset: 0)
-        bgScrollView.contentSize = CGSizeMake(self.view.width(), kScreenHeight*(590/667))
+        bgScrollView.contentSize = CGSizeMake(self.view.width(), kScreenHeight - 64 - 5)
         topBGView()
         categoryBGView()
 
@@ -85,15 +85,16 @@ class MineViewController: UIViewController {
         headerBtn.backgroundColor = UIColor.whiteColor()
         topImageView.addSubview(headerBtn)
         headerBtn.clipsToBounds = true;
-        headerBtn.layer.cornerRadius = 50;
+        headerBtn.layer.cornerRadius =  kScreenHeight*( 50 / 667);
         headerBtn.setImage(UIImage.init(named: "lhshare0"), forState: UIControlState.Normal)
         headerBtn.addTarget(self, action:#selector(MineViewController.editBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
 
 //        布局
-        let btnWidth:CGFloat = kScreenHeight*(100.0/667);
-        let headerSize = CGSizeMake(kScreenWidth * (btnWidth / 375), kScreenHeight * (btnWidth / 667));
+        let btnWidth:CGFloat = 100.0
+        let headerSize = CGSizeMake(kScreenHeight * (btnWidth / 667), kScreenHeight * (btnWidth / 667));
         headerBtn.autoSetDimensionsToSize(headerSize);
-        headerBtn.autoPinEdgeToSuperviewEdge(ALEdge.Leading, withInset: (kScreenWidth - kScreenWidth * (btnWidth / 375)) / 2)
+        headerBtn.autoPinEdgeToSuperviewEdge(ALEdge.Leading, withInset: (kScreenWidth -
+            kScreenHeight * (btnWidth / 667)) / 2)
         headerBtn.autoPinEdgeToSuperviewEdge(ALEdge.Top, withInset: kScreenHeight * (50 / 667))
         
         
@@ -168,7 +169,7 @@ class MineViewController: UIViewController {
         let iconArray : NSArray = ["news_3","orderform","titleshare_1","plike_1","sendpictures_1","shop"];
         
         let btnWidth:CGFloat = (kScreenWidth - 1)/2.0
-        let btnHeight:CGFloat = 100;
+        let btnHeight:CGFloat = kScreenHeight*(100/667);
         
         for i in 0 ... nameArray.count-1  {
             
@@ -197,7 +198,7 @@ class MineViewController: UIViewController {
         bottomLable.textAlignment = NSTextAlignment.Center
         let bottomSize = CGSizeMake(kScreenWidth, 20)
         bottomLable.autoSetDimensionsToSize(bottomSize)
-        bottomLable.autoPinEdge(.Top, toEdge: .Bottom, ofView: categoryView, withOffset: 30)
+        bottomLable.autoPinEdge(.Top, toEdge: .Bottom, ofView: categoryView, withOffset: kScreenHeight*(30/667))
         
         
     }

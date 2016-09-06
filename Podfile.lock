@@ -3,6 +3,7 @@ PODS:
   - CYLTabBarController (1.5.6)
   - FDFullscreenPopGesture (1.1)
   - Kingfisher (2.3.1)
+  - MBProgressHUD (1.0.0)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
@@ -10,6 +11,7 @@ DEPENDENCIES:
   - CYLTabBarController (~> 1.5.6)
   - FDFullscreenPopGesture (~> 1.1)
   - Kingfisher (~> 2.3.1)
+  - MBProgressHUD (~> 1.0.0)
   - PureLayout (~> 3.0.2)
 
 SPEC CHECKSUMS:
@@ -17,8 +19,9 @@ SPEC CHECKSUMS:
   CYLTabBarController: 5b7328765e6103e1776ae296b8e009a3da0e4c4b
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   Kingfisher: 6d3fbada4829cbc7b89e883e8218c28afeb64e42
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: bf20606b783631dfac15b559681dfaed162cff17
+PODFILE CHECKSUM: f6ae722a73d5dd2f002526df70958b14d39ebf91
 
 COCOAPODS: 1.0.1

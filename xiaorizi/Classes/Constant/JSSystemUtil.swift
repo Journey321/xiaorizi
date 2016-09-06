@@ -8,6 +8,16 @@
 
 import Foundation
 import UIKit
+/// 用户昵称
+public let UserNickname : NSString  = "UserNickname"
+/// 用户签名
+public let UserSignature : NSString = "UserSignature"
+/// 邮箱
+public let UserEmail : NSString     = "UserEmail"
+/// 电话
+public let UserPhone : NSString     = "UserPhone"
+
+
  /// 获取系统版本
 let  SystemVersion:Float = Float(UIDevice.currentDevice().systemVersion)!
  /// 获取系统名称
@@ -34,16 +44,12 @@ let IS_IPHONE_5 = fabs(Double(kScreenHeight) - Double(568))<DBL_EPSILON
 let IS_IPHONE_6 = fabs(Double(kScreenHeight) - Double(667))<DBL_EPSILON
 let IS_IPHONE_6P = fabs(Double(kScreenHeight) - Double(736))<DBL_EPSILON
 
-//func RGBCOKOR(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) { UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)}
+
 struct theme {
     ///  APP导航条barButtonItem文字大小
     static let navItemFont: UIFont = UIFont.systemFontOfSize(16)
     ///  APP导航条titleFont文字大小
     static let navTitleFont: UIFont = UIFont.systemFontOfSize(18)
 }
-
-
-
-
 
 
