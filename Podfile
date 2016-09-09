@@ -10,6 +10,7 @@ pod 'CYLTabBarController', '~> 1.5.6' ## tabbar
 pod 'FDFullscreenPopGesture', '~> 1.1' ## 侧滑返回
 pod 'PureLayout', '~> 3.0.2' ## 布局
 pod 'MBProgressHUD', '~> 1.0.0' ## 提示框
+pod 'SDWebImage', '~> 3.8.1' ##图片缓存
 end
 
 target 'xiaoriziTests' do
