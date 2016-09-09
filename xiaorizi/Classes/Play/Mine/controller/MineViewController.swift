@@ -74,6 +74,7 @@ class MineViewController: UIViewController {
         bgScrollView.addSubview(setBtn)
         setBtn.backgroundColor = UIColor.clearColor()
         setBtn.setImage(UIImage.init(named: "set_1"), forState: UIControlState.Normal)
+        setBtn.addTarget(self, action: #selector(setUpBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         setBtn.autoPinEdge(.Top, toEdge: .Bottom, ofView: bgScrollView, withOffset: -15.0)
         setBtn.autoPinEdge(.Left, toEdge: .Right, ofView: bgScrollView, withOffset:kScreenWidth - 60)
         let size = CGSizeMake(70, 70);
@@ -226,6 +227,14 @@ class MineViewController: UIViewController {
     
     }
     
+    
+//    设置
+    func setUpBtnClick(){
+        
+        let setup = SetUpViewController()
+        self.navigationController?.pushViewController(setup, animated: true)
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

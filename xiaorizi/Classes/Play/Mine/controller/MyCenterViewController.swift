@@ -8,8 +8,10 @@
 
 
 import UIKit
+import AVFoundation
+import Photos
 
-class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UIActionSheetDelegate,UINavigationControllerDelegate {
 
     var tableView = UITableView()
     /// 名字数组
@@ -28,7 +30,9 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
     /// 电话
     var phoneStr        = ""
     
-    
+    var userHeaderImgSheet = UIAlertController()
+    var sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
@@ -62,6 +66,8 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
         placeholderArray = NSMutableArray.init(array: ["请输入您的昵称","请输入您的签名","请输入您的邮箱","请输入手机号"])
         navigationTittleArray = NSMutableArray.init(array: ["用户名","签名","邮箱","手机号"])
         
+        
+        
         let userNicknameStr = NSUserDefaults.standardUserDefaults().objectForKey(UserNickname as String)
         
         let userSingayureStr = NSUserDefaults.standardUserDefaults().objectForKey(UserSignature as String) as! String!
@@ -71,10 +77,10 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
         let userPhoneStr = NSUserDefaults.standardUserDefaults().objectForKey(UserPhone as String) as! String!
 
 
-        nicknameStr =   (userNicknameStr == nil) ? "" : (userNicknameStr as! NSString ) as String
-        signatureStr =  (userSingayureStr == nil) ? "" : (userSingayureStr as NSString ) as String
-        emailStr =      (userEmailStr == nil) ? "" : (userEmailStr as NSString ) as String
-        phoneStr =      (userPhoneStr == nil) ? "" : userPhoneStr as NSString as String
+        nicknameStr = (userNicknameStr == nil) ? "" : (userNicknameStr as! NSString ) as String
+        signatureStr = (userSingayureStr == nil) ? "" : (userSingayureStr as NSString ) as String
+        emailStr = (userEmailStr == nil) ? "" : (userEmailStr as NSString ) as String
+        phoneStr = (userPhoneStr == nil) ? "" : userPhoneStr as NSString as String
         
         
         
@@ -118,6 +124,7 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
             let cell = MyCenterHeaderCell.init(style: UITableViewCellStyle.Value1, reuseIdentifier: "cellIdentifier")
             cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
             cell.selectionStyle = UITableViewCellSelectionStyle.None;
+            cell.tag = 99;
             return cell;
 
         }
@@ -161,12 +168,159 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
             }
             self.navigationController?.pushViewController(vc, animated: true)
         }
-   
         
+        if indexPath.row == 0 {
+            
+       
+   
+             userHeaderImgSheet = UIAlertController.init(title: "请选择操作", message: "", preferredStyle: UIAlertControllerStyle.ActionSheet)
+            
+            let alertSheetAction = UIAlertAction.init(title: "拍照", style: UIAlertActionStyle.Default) { (UIAlertAction) in
+                self.openCamera()
+            }
+        
+        
+            let alertPhotoSheetAction = UIAlertAction.init(title: "从手机相册选择", style: UIAlertActionStyle.Default){ (UIAlertAction) in
+                self.openUserPhotoLibrary()
+
+            }
+            
+            
+            let sureSheetAction = UIAlertAction.init(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil)
+            
+            userHeaderImgSheet.addAction(alertSheetAction)
+            userHeaderImgSheet.addAction(alertPhotoSheetAction)
+            userHeaderImgSheet.addAction(sureSheetAction)
+        
+            self.presentViewController(userHeaderImgSheet, animated: true, completion: nil)
+         }
+        
+        
+
         
     }
 
+//        打开相机
+    func openCamera(){
+        if self.cameraPermission() == true{
+            
+            self.sourceType = UIImagePickerControllerSourceType.Camera
+            self.open()
+            
+        }else{
+            
+            self.userHeaderImgSheet = UIAlertController.init(title: "温馨提示", message: "请在设置中打开相机权限", preferredStyle: UIAlertControllerStyle.Alert)
+            let tempAction = UIAlertAction.init(title: "确定", style: UIAlertActionStyle.Cancel, handler: nil)
+            self.userHeaderImgSheet.addAction(tempAction)
+            self.presentViewController(self.userHeaderImgSheet, animated: true, completion: nil)
+            
+        }
+    }
+
+    
+//      打开相册
+    func openUserPhotoLibrary(){
+        
+        if self.cameraPermission() == true{
+            self.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+            self.open()
+            
+        }else{
+            self.userHeaderImgSheet = UIAlertController.init(title: "温馨提示", message: "请在设置中打开相册权限", preferredStyle: UIAlertControllerStyle.Alert)
+            let tempAction = UIAlertAction.init(title: "确定", style: UIAlertActionStyle.Cancel, handler: nil)
+            self.userHeaderImgSheet.addAction(tempAction)
+            self.presentViewController(self.userHeaderImgSheet, animated: true, completion: nil)
+            
+        }
+        
+
+    }
+    
+//    打开相机或者相册
+    func open(){
+    
+        if UIImagePickerController.isSourceTypeAvailable(self.sourceType) {
+            let imagePickController:UIImagePickerController = UIImagePickerController()
+            imagePickController.delegate = self
+            imagePickController.allowsEditing = true
+            imagePickController.sourceType = self.sourceType
+            self.presentViewController(imagePickController, animated: true, completion: {
+            })
+        }else{
+            
+            
+            let hud : MBProgressHUD
+                = MBProgressHUD.showHUDAddedTo(self.navigationController!.view, animated: true)
+            hud.backgroundView.style = MBProgressHUDBackgroundStyle.SolidColor;
+            hud.backgroundView.color = UIColor.blackColor()
+            hud.backgroundView.alpha = 0.3
+            hud.mode = .Text
+            hud.bezelView.color = UIColor.blackColor()
+            hud.detailsLabel.textColor = UIColor.whiteColor()
+            hud.removeFromSuperViewOnHide = true
+            hud.detailsLabel.text = "模拟器没有摄像头,请链接真机调试"
+            hud.hideAnimated(true, afterDelay: 1.5)
+
+        }
+    
+    }
+
+    //    选择完图片操作
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+
+        let cell = tableView.viewWithTag(99)as! MyCenterHeaderCell
+    
+        cell.headerImageView.image = image
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
+//    判断相册权限
+    func photoLibryPermissions() -> Bool{
+        
+        let library : PHAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
+        if library == PHAuthorizationStatus.Denied || library == PHAuthorizationStatus.Restricted {
+            return false
+        }else{
+            
+            return true
+        }
+    }
+    
+    
+//    判断相机权限
+    func cameraPermission() -> Bool{
+        
+        let autnStatus : AVAuthorizationStatus = AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo)
+        if autnStatus == AVAuthorizationStatus.Denied || autnStatus == AVAuthorizationStatus.Restricted {
+            
+            return false
+            
+        }else{
+            
+            return true
+        }
+        
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
