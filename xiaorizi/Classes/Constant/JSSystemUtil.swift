@@ -16,7 +16,7 @@ public let UserSignature : NSString = "UserSignature"
 public let UserEmail : NSString     = "UserEmail"
 /// 电话
 public let UserPhone : NSString     = "UserPhone"
-
+public let BGCOLOR = UIColor.init(rgbByFFFFFF: 0xf3f3f3)
 
  /// 获取系统版本
 let  SystemVersion:Float = Float(UIDevice.currentDevice().systemVersion)!

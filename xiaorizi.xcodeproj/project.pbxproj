@@ -42,6 +42,7 @@
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
 		9C1D6DC61D2A43DF0081DC41 /* xiaoriziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */; };
+		9C1DB6751D8692A9000E228B /* FindCategoryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1DB6741D8692A9000E228B /* FindCategoryBtn.swift */; };
 		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
 		9CF7D7E31D7D4595008B0AA8 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7E21D7D4595008B0AA8 /* UIView+LayoutMethods.m */; };
 		9CF7D7E81D7D4A88008B0AA8 /* NSString+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7E71D7D4A88008B0AA8 /* NSString+Util.swift */; };
@@ -83,7 +84,7 @@
 		2C434FBF1D33FB92009BFF7C /* UIBarButtonItem+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Util.swift"; sourceTree = "<group>"; };
 		2C434FC01D33FB92009BFF7C /* UIColor+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 		2C434FC11D33FB92009BFF7C /* UIView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
-		2C434FC31D33FB92009BFF7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		2C434FC31D33FB92009BFF7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = ../FindViewController.swift; sourceTree = "<group>"; };
 		2C434FC61D33FB92009BFF7C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		2C434FCA1D33FB92009BFF7C /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDayViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 		9C1D6DC11D2A43DF0081DC41 /* xiaoriziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaoriziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoriziUITests.swift; sourceTree = "<group>"; };
 		9C1D6DC71D2A43DF0081DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1DB6741D8692A9000E228B /* FindCategoryBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCategoryBtn.swift; sourceTree = "<group>"; };
 		9C779C8D1D336BFE0068EF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CA161D41D3C74DA00606B56 /* XiaoRiZiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XiaoRiZiHeader.h; path = ../XiaoRiZiHeader.h; sourceTree = "<group>"; };
 		9CA161D51D3C751C00606B56 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -244,7 +246,10 @@
 		2C434FC21D33FB92009BFF7C /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				2C434FC31D33FB92009BFF7C /* FindViewController.swift */,
+				9C1DB6701D86923D000E228B /* controller */,
+				9C1DB6711D86923D000E228B /* lib */,
+				9C1DB6721D86923D000E228B /* model */,
+				9C1DB6731D86923D000E228B /* view */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -486,6 +491,36 @@
 				9C1D6DC71D2A43DF0081DC41 /* Info.plist */,
 			);
 			path = xiaoriziUITests;
+			sourceTree = "<group>";
+		};
+		9C1DB6701D86923D000E228B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C434FC31D33FB92009BFF7C /* FindViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9C1DB6711D86923D000E228B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9C1DB6721D86923D000E228B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9C1DB6731D86923D000E228B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C1DB6741D8692A9000E228B /* FindCategoryBtn.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		9CF7D7EE1D7E66F9008B0AA8 /* Mine */ = {
@@ -853,6 +888,7 @@
 				2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */,
 				9CF7D7FB1D7E66F9008B0AA8 /* MyCenterHeaderCell.swift in Sources */,
 				9CF7D7F81D7E66F9008B0AA8 /* ChangeNameViewController.swift in Sources */,
+				9C1DB6751D8692A9000E228B /* FindCategoryBtn.swift in Sources */,
 				2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */,
 				9CF7D7FA1D7E66F9008B0AA8 /* MyCenterViewController.swift in Sources */,
 				9CF7D7FE1D7E6734008B0AA8 /* UserManager.swift in Sources */,
