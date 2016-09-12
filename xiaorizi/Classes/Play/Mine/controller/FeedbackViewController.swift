@@ -56,6 +56,7 @@ class FeedbackViewController: UIViewController,UITextViewDelegate {
         centerView.addSubview(textField)
         textField.placeholder = "留下电话或者电话，以便我们给您回复"
         textField.backgroundColor = UIColor.clearColor()
+        textField.returnKeyType = UIReturnKeyType.Done
         textField.font = UIFont.systemFontOfSize(14)
         textField.setValue(UIColor.lightGrayColor(), forKeyPath: "_placeholderLabel.textColor")
         let textSize = CGSizeMake(kScreenWidth - 10, 30)
@@ -77,6 +78,25 @@ class FeedbackViewController: UIViewController,UITextViewDelegate {
             feedbackTextView.placeholderLable.hidden = true
         }
     }
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if (text == "\n") {
+            
+            textView.resignFirstResponder()
+            
+            return false;
+        }
+        return true;
+    }
+    
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    
+        self.view.endEditing(true)
+        
+    }
+    
+    
     
     
     func rightBtnClick(){
