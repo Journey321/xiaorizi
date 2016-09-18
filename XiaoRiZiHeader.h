@@ -17,7 +17,7 @@
 #import "ShareSDKConnector/ShareSDKConnector.h"
 
 
-//腾讯SDK头文件
+//腾讯SDK头文件 
 #import "TencentOpenAPI/TencentOAuth.h"
 #import "TencentOpenAPI/QQApiInterface.h"
 
