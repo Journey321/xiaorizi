@@ -27,12 +27,12 @@ extension UIColor{
         let rect=CGRect(x: 0.0, y:0.0, width:1.0,height: 1.0);
         UIGraphicsBeginImageContext(rect.size);
         let context = UIGraphicsGetCurrentContext();
-        CGContextSetFillColorWithColor(context, self.CGColor);
-        CGContextFillRect(context, rect);
+        CGContextSetFillColorWithColor(context!, self.CGColor);
+        CGContextFillRect(context!, rect);
         let theImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        return theImage
+        return theImage!
         
     }
 }

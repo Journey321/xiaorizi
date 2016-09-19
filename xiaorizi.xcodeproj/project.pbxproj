@@ -662,15 +662,18 @@
 					9C1D6DA11D2A43DF0081DC41 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = U7HK54YF3X;
+						LastSwiftMigration = 0800;
 					};
 					9C1D6DB51D2A43DF0081DC41 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = U7HK54YF3X;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9C1D6DA11D2A43DF0081DC41;
 					};
 					9C1D6DC01D2A43DF0081DC41 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = U7HK54YF3X;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9C1D6DA11D2A43DF0081DC41;
 					};
 				};
@@ -1059,6 +1062,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
+				SWIFT_VERSION = 2.3;
 				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/**";
 			};
 			name = Debug;
@@ -1092,6 +1096,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = XiaoRiZiHeader.h;
+				SWIFT_VERSION = 2.3;
 				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}\"/**";
 			};
 			name = Release;
@@ -1105,6 +1110,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaoriziTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaorizi.app/xiaorizi";
 			};
 			name = Debug;
@@ -1118,6 +1124,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaoriziTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/xiaorizi.app/xiaorizi";
 			};
 			name = Release;
@@ -1130,6 +1137,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaoriziUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = xiaorizi;
 			};
 			name = Debug;
@@ -1142,6 +1150,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = STS.xiaoriziUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = xiaorizi;
 			};
 			name = Release;
