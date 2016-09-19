@@ -15,7 +15,16 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var cityBtn: TextImageButton!
     var nameArray = NSMutableArray()
     var imgArray = NSMutableArray()
+    var tableView = UITableView()
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        self.tabBarController?.tabBar.hidden = false
+        
+    }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "找店"
@@ -57,20 +66,20 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         topSearchView.addTarget(self, action: #selector(topBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         
 
-        let tableView = UITableView.init()
+        tableView = UITableView.init()
         self.view.addSubview(tableView)
         tableView.backgroundColor = BGCOLOR
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView.init()
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.registerClass(FindCustomTableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         let tableViewSize = CGSizeMake(kScreenWidth, kScreenHeight - 64 - 2 - 49 - 52)
         tableView.autoSetDimensionsToSize(tableViewSize)
         tableView.autoPinEdge(.Top, toEdge: .Bottom, ofView: topSearchView, withOffset: 2)
         tableView.autoPinEdgeToSuperviewEdge(.Left, withInset: 0)
 
-        
     }
     
     
@@ -81,7 +90,7 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if section == 0 {
             return 0
         }
-        return 1;
+        return 3;
     }
     
     
@@ -93,18 +102,30 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
+            
             return 160
-
         }
         return 50
         
     }
     
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 1 {
+            
+            return 145
+        }
+        return 204
+    }
+    
+    
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
-        cell.textLabel?.text = "11"
-        cell.backgroundColor = UIColor.grayColor()
+        let cell = FindCustomTableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        if indexPath.section == 2 {
+            cell.isTheme = true
+        }
         return cell
     }
     
@@ -112,7 +133,6 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         if section == 0 {
-            
             
             let view = UIView.init()
             view.backgroundColor = BGCOLOR
@@ -136,7 +156,7 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 view.addSubview(btn)
             }
             
-            tableView.tableHeaderView = view;
+//            tableView.tableHeaderView = view;
 
             return view
         }
@@ -145,6 +165,7 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let headerView = UIView.init()
         headerView.backgroundColor = UIColor.whiteColor()
         
+        //标题
         let titleLable = UILabel.init()
         headerView.addSubview(titleLable)
         titleLable.text = section == 1 ? "商圈" : "专题"
@@ -155,6 +176,8 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         titleLable.autoPinEdgeToSuperviewEdge(.Left, withInset: 5)
         titleLable.autoPinEdgeToSuperviewEdge(.Top, withInset: 15)
         
+        
+        //分割线
         let lineView = UIView.init()
         headerView.addSubview(lineView)
         lineView.backgroundColor = UIColor.blackColor()
@@ -166,36 +189,46 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         if section == 2 {
             
-//            g更多
+//           更多
             let moreLable = UILabel.init()
             moreLable.text = "更多"
             headerView.addSubview(moreLable)
-            moreLable.font = UIFont.systemFontOfSize(16)
+            moreLable.font = UIFont.systemFontOfSize(14)
             moreLable.textColor = UIColor.grayColor()
+            moreLable.textAlignment = NSTextAlignment.Right
             
-            let moreSize = CGSizeMake(35, 15)
+            let moreSize = CGSizeMake(30, 15)
             moreLable.autoSetDimensionsToSize(moreSize)
             moreLable.autoPinEdgeToSuperviewEdge(.Top, withInset: 20)
-            moreLable.autoPinEdgeToSuperviewEdge(.Left, withInset: kScreenWidth - 60)
+            moreLable.autoPinEdgeToSuperviewEdge(.Left, withInset: kScreenWidth - 50)
             
             
 //            箭头
             let arrowImg = UIImageView.init()
             headerView.addSubview(arrowImg)
             arrowImg.image = UIImage.init(named:"into")
-            
-            let imgSize = CGSizeMake(20, 20)
+
+            let imgSize = CGSizeMake(17, 20)
             arrowImg.autoSetDimensionsToSize(imgSize)
             arrowImg.autoPinEdge(.Left, toEdge: .Right, ofView: moreLable, withOffset: 0)
-            arrowImg.autoPinEdgeToSuperviewEdge(.Top, withInset: 17)
+            arrowImg.autoPinEdgeToSuperviewEdge(.Top, withInset: 17.5)
             
             
+            //按钮
+            let moreBtn = UIButton.init(type: UIButtonType.Custom)
+            moreBtn.backgroundColor = UIColor.clearColor()
+            headerView.addSubview(moreBtn)
+            moreBtn.addTarget(self, action:#selector(moreBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
             
             
+            let btnSize = CGSizeMake(55, 30)
+            moreBtn.autoSetDimensionsToSize(btnSize)
+            moreBtn.autoPinEdgeToSuperviewEdge(.Top, withInset: 15)
+            moreBtn.autoPinEdgeToSuperviewEdge(.Left, withInset: kScreenWidth - 60)
             
-            
+   
         }
-        
+
         return headerView
             
         
@@ -209,21 +242,39 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     
+    //区头跟随cell移动
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        let sectionHeaderHeight:CGFloat = 50;
+
+        if scrollView == tableView {
+            
+            if scrollView.contentOffset.y <= sectionHeaderHeight && scrollView.contentOffset.y >= -64  {
+                scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0)
+            }else if (scrollView.contentOffset.y >= sectionHeaderHeight){
+                
+                scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+
+            }
+        }
+    }
+    
+    
+    
     
     // MARK: 头部点击事件
     func topBtnClick(){
         print("----click----")
-        UIView.animateWithDuration(13) {
-            
-//            self.navigationController?.navigationBarHidden = true
-//
-//            self.topSearchView.autoPinEdgeToSuperviewEdge(.Top, withInset: 20)
-        }
-        
-  
-        
+ 
     }
     
+    
+    // MARK: 主题点击更多
+    func moreBtnClick(){
+        
+        let vc = SpecialTableViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
     
     
     // MARK: 导航栏按钮点击事件

@@ -16,7 +16,7 @@ class MyCenterHeaderCell: UITableViewCell {
     
     override func awakeFromNib(){
         super.awakeFromNib()
-        self.backgroundColor = UIColor.redColor()
+        self.backgroundColor = UIColor.whiteColor()
     }
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)

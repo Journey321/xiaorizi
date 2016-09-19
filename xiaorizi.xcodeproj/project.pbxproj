@@ -12,7 +12,6 @@
 		2C434FD31D33FB92009BFF7C /* UIBarButtonItem+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FBF1D33FB92009BFF7C /* UIBarButtonItem+Util.swift */; };
 		2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC01D33FB92009BFF7C /* UIColor+Util.swift */; };
 		2C434FD51D33FB92009BFF7C /* UIView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC11D33FB92009BFF7C /* UIView+Util.swift */; };
-		2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC31D33FB92009BFF7C /* FindViewController.swift */; };
 		2C434FD81D33FB92009BFF7C /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FC61D33FB92009BFF7C /* MainTabbarViewController.swift */; };
 		2C434FDA1D33FB92009BFF7C /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCA1D33FB92009BFF7C /* PlayViewController.swift */; };
 		2C434FDB1D33FB92009BFF7C /* SmallDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */; };
@@ -38,11 +37,14 @@
 		87E68DA61D3E157A006AED03 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161DB1D3C753400606B56 /* JavaScriptCore.framework */; };
 		87E68DA71D3E1AA8006AED03 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA161D71D3C752700606B56 /* libsqlite3.tbd */; };
 		8A8357653CC9CB962B25CF2A /* Pods_xiaorizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45449468718979ABF4E04A5 /* Pods_xiaorizi.framework */; };
+		9C0793521D8F92E600E8569A /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07934E1D8F92E600E8569A /* FindViewController.swift */; };
+		9C0793541D8F930300E8569A /* FindCategoryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0793531D8F930300E8569A /* FindCategoryBtn.swift */; };
+		9C0793561D8FB71300E8569A /* FindCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0793551D8FB71300E8569A /* FindCustomTableViewCell.swift */; };
 		9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */; };
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
 		9C1D6DC61D2A43DF0081DC41 /* xiaoriziUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */; };
-		9C1DB6751D8692A9000E228B /* FindCategoryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1DB6741D8692A9000E228B /* FindCategoryBtn.swift */; };
+		9C653FA61D8FCF6500D70313 /* SpecialTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C653FA51D8FCF6500D70313 /* SpecialTableViewController.swift */; };
 		9C779C8E1D336BFE0068EF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C779C8D1D336BFE0068EF14 /* Images.xcassets */; };
 		9CF7D7E31D7D4595008B0AA8 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7E21D7D4595008B0AA8 /* UIView+LayoutMethods.m */; };
 		9CF7D7E81D7D4A88008B0AA8 /* NSString+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7D7E71D7D4A88008B0AA8 /* NSString+Util.swift */; };
@@ -84,7 +86,6 @@
 		2C434FBF1D33FB92009BFF7C /* UIBarButtonItem+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Util.swift"; sourceTree = "<group>"; };
 		2C434FC01D33FB92009BFF7C /* UIColor+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Util.swift"; sourceTree = "<group>"; };
 		2C434FC11D33FB92009BFF7C /* UIView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Util.swift"; sourceTree = "<group>"; };
-		2C434FC31D33FB92009BFF7C /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = ../FindViewController.swift; sourceTree = "<group>"; };
 		2C434FC61D33FB92009BFF7C /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		2C434FCA1D33FB92009BFF7C /* PlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		2C434FCD1D33FB92009BFF7C /* SmallDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmallDayViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +126,9 @@
 		87E68D951D3E148F006AED03 /* ShareSDKConnector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKConnector.framework; sourceTree = "<group>"; };
 		8C06AE0694EBE4749083AF79 /* Pods_xiaoriziTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xiaoriziTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xiaorizi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xiaorizi/Pods-xiaorizi.debug.xcconfig"; sourceTree = "<group>"; };
+		9C07934E1D8F92E600E8569A /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		9C0793531D8F930300E8569A /* FindCategoryBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCategoryBtn.swift; sourceTree = "<group>"; };
+		9C0793551D8FB71300E8569A /* FindCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCustomTableViewCell.swift; sourceTree = "<group>"; };
 		9C1D6DA21D2A43DF0081DC41 /* xiaorizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaorizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DAA1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1D6DAF1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -135,7 +139,7 @@
 		9C1D6DC11D2A43DF0081DC41 /* xiaoriziUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xiaoriziUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DC51D2A43DF0081DC41 /* xiaoriziUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xiaoriziUITests.swift; sourceTree = "<group>"; };
 		9C1D6DC71D2A43DF0081DC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C1DB6741D8692A9000E228B /* FindCategoryBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCategoryBtn.swift; sourceTree = "<group>"; };
+		9C653FA51D8FCF6500D70313 /* SpecialTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpecialTableViewController.swift; path = ../view/SpecialTableViewController.swift; sourceTree = "<group>"; };
 		9C779C8D1D336BFE0068EF14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CA161D41D3C74DA00606B56 /* XiaoRiZiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XiaoRiZiHeader.h; path = ../XiaoRiZiHeader.h; sourceTree = "<group>"; };
 		9CA161D51D3C751C00606B56 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -246,10 +250,10 @@
 		2C434FC21D33FB92009BFF7C /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				9C1DB6701D86923D000E228B /* controller */,
-				9C1DB6711D86923D000E228B /* lib */,
-				9C1DB6721D86923D000E228B /* model */,
-				9C1DB6731D86923D000E228B /* view */,
+				9C07934D1D8F92E600E8569A /* controller */,
+				9C07934F1D8F92E600E8569A /* lib */,
+				9C0793501D8F92E600E8569A /* model */,
+				9C0793511D8F92E600E8569A /* view */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -429,6 +433,38 @@
 			path = Required;
 			sourceTree = "<group>";
 		};
+		9C07934D1D8F92E600E8569A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C07934E1D8F92E600E8569A /* FindViewController.swift */,
+				9C653FA51D8FCF6500D70313 /* SpecialTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		9C07934F1D8F92E600E8569A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		9C0793501D8F92E600E8569A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		9C0793511D8F92E600E8569A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				9C0793531D8F930300E8569A /* FindCategoryBtn.swift */,
+				9C0793551D8FB71300E8569A /* FindCustomTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		9C094A801D7586C6009CE7AD /* OC-File */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,36 +527,6 @@
 				9C1D6DC71D2A43DF0081DC41 /* Info.plist */,
 			);
 			path = xiaoriziUITests;
-			sourceTree = "<group>";
-		};
-		9C1DB6701D86923D000E228B /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				2C434FC31D33FB92009BFF7C /* FindViewController.swift */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
-		9C1DB6711D86923D000E228B /* lib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		9C1DB6721D86923D000E228B /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		9C1DB6731D86923D000E228B /* view */ = {
-			isa = PBXGroup;
-			children = (
-				9C1DB6741D8692A9000E228B /* FindCategoryBtn.swift */,
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		9CF7D7EE1D7E66F9008B0AA8 /* Mine */ = {
@@ -656,7 +662,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = zhike;
 				TargetAttributes = {
 					9C1D6DA11D2A43DF0081DC41 = {
@@ -876,9 +882,12 @@
 				2C434FD81D33FB92009BFF7C /* MainTabbarViewController.swift in Sources */,
 				9CF7D7E81D7D4A88008B0AA8 /* NSString+Util.swift in Sources */,
 				2C434FD51D33FB92009BFF7C /* UIView+Util.swift in Sources */,
+				9C653FA61D8FCF6500D70313 /* SpecialTableViewController.swift in Sources */,
 				9CF7D8401D815E31008B0AA8 /* FeedbackTextView.swift in Sources */,
+				9C0793561D8FB71300E8569A /* FindCustomTableViewCell.swift in Sources */,
 				2C434FDB1D33FB92009BFF7C /* SmallDayViewController.swift in Sources */,
 				2C434FD11D33FB92009BFF7C /* AppDelegate.swift in Sources */,
+				9C0793521D8F92E600E8569A /* FindViewController.swift in Sources */,
 				2C434FD31D33FB92009BFF7C /* UIBarButtonItem+Util.swift in Sources */,
 				9CF7D7FC1D7E66F9008B0AA8 /* MyCustomBtn.swift in Sources */,
 				2C434FDA1D33FB92009BFF7C /* PlayViewController.swift in Sources */,
@@ -890,9 +899,8 @@
 				9CF7D7F91D7E66F9008B0AA8 /* MineViewController.swift in Sources */,
 				2C434FD41D33FB92009BFF7C /* UIColor+Util.swift in Sources */,
 				9CF7D7FB1D7E66F9008B0AA8 /* MyCenterHeaderCell.swift in Sources */,
+				9C0793541D8F930300E8569A /* FindCategoryBtn.swift in Sources */,
 				9CF7D7F81D7E66F9008B0AA8 /* ChangeNameViewController.swift in Sources */,
-				9C1DB6751D8692A9000E228B /* FindCategoryBtn.swift in Sources */,
-				2C434FD61D33FB92009BFF7C /* FindViewController.swift in Sources */,
 				9CF7D7FA1D7E66F9008B0AA8 /* MyCenterViewController.swift in Sources */,
 				9CF7D7FE1D7E6734008B0AA8 /* UserManager.swift in Sources */,
 				2CA52AF71D50EB60007266BF /* NetWorkTool.swift in Sources */,
@@ -964,8 +972,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -987,7 +997,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1009,8 +1019,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1026,9 +1038,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1037,6 +1050,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B188A8A6F51C34FDA62B376 /* Pods-xiaorizi.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1071,6 +1085,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8402C3BB02270300DCDA7FAC /* Pods-xiaorizi.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
