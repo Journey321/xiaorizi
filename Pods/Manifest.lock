@@ -2,9 +2,10 @@ PODS:
   - Alamofire (3.5.0)
   - CYLTabBarController (1.5.6)
   - FDFullscreenPopGesture (1.1)
-  - IQKeyboardManager (4.0.5)
+  - IQKeyboardManager (4.0.6)
   - Kingfisher (2.3.1)
   - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
   - PureLayout (3.0.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - IQKeyboardManager (~> 4.0.5)
   - Kingfisher (~> 2.3.1)
   - MBProgressHUD (~> 1.0.0)
+  - MJRefresh (~> 3.1.12)
   - PureLayout (~> 3.0.2)
   - SDWebImage (~> 3.8.1)
 
@@ -24,12 +26,13 @@ SPEC CHECKSUMS:
   Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
   CYLTabBarController: 5b7328765e6103e1776ae296b8e009a3da0e4c4b
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
-  IQKeyboardManager: 50b62c0603308968256f8208886e206c1dcce607
+  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
   Kingfisher: 6d3fbada4829cbc7b89e883e8218c28afeb64e42
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 9e0fd4f570078c82def0e895162859fc80e21c38
+PODFILE CHECKSUM: 6e4db683ff63f97626da776c29f9cbaa35ddd983
 
 COCOAPODS: 1.0.1
