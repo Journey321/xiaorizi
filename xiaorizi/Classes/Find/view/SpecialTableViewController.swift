@@ -10,7 +10,10 @@ import UIKit
 
 class SpecialTableViewController: UITableViewController {
 
-    
+    // 顶部刷新
+    let header = MJRefreshNormalHeader()
+    // 底部刷新
+    let footer = MJRefreshAutoNormalFooter()
     override func viewWillAppear(animated: Bool) {
         
         super.viewWillAppear(true)
@@ -25,6 +28,16 @@ class SpecialTableViewController: UITableViewController {
         self.title = "专题"
         self.tableView.registerClass(FindCustomTableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -49, 0)
+        
+        //下拉刷新
+        self.tableView.mj_header = header
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+        
+        
+        //底部刷新
+        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRefresh))
+        self.tableView.mj_footer = footer
+        
     }
 
 
@@ -51,6 +64,34 @@ class SpecialTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
+    
+    
+    // MARK: 下拉刷新
+    func headerRefresh(){
+        
+        
+        let time: NSTimeInterval = 2.0
+        let delay = dispatch_time(DISPATCH_TIME_NOW,
+                                  Int64(time * Double(NSEC_PER_SEC)))
+        dispatch_after(delay, dispatch_get_main_queue()) {
+            print("2 秒后输出")
+            self.tableView.mj_header.endRefreshing()
+        }
+    }
+    
+    
+    var index = 0
+    func footerRefresh(){
+        
+        self.tableView.mj_footer.endRefreshing()
+        
+        index = index + 1
+        if index > 2 {
+            
+            self.tableView.mj_footer.endRefreshingWithNoMoreData()
+        }
     }
     
     

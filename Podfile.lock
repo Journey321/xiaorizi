@@ -18,7 +18,7 @@ DEPENDENCIES:
   - IQKeyboardManager (~> 4.0.5)
   - Kingfisher (~> 2.3.1)
   - MBProgressHUD (~> 1.0.0)
-  - MJRefresh (~> 3.1.12)
+  - MJRefresh
   - PureLayout (~> 3.0.2)
   - SDWebImage (~> 3.8.1)
 
@@ -33,6 +33,6 @@ SPEC CHECKSUMS:
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: 6e4db683ff63f97626da776c29f9cbaa35ddd983
+PODFILE CHECKSUM: 35f625a784e262bf4a9b30a1afbfb14efb568a86
 
 COCOAPODS: 1.0.1

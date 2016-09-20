@@ -12,7 +12,7 @@ pod 'PureLayout', '~> 3.0.2' ## 布局
 pod 'MBProgressHUD', '~> 1.0.0' ## 提示框
 pod 'SDWebImage', '~> 3.8.1' ##图片缓存
 pod 'IQKeyboardManager', '~> 4.0.5' ##自适应键盘高度
-pod 'MJRefresh', '~> 3.1.12' ##刷新
+pod 'MJRefresh' ##刷新
 end
 
 target 'xiaoriziTests' do

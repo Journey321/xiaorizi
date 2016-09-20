@@ -16,7 +16,10 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     var nameArray = NSMutableArray()
     var imgArray = NSMutableArray()
     var tableView = UITableView()
-    
+    // 顶部刷新
+    let header = MJRefreshNormalHeader()
+    // 底部刷新
+    let footer = MJRefreshAutoNormalFooter()
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
@@ -80,6 +83,16 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         tableView.autoPinEdge(.Top, toEdge: .Bottom, ofView: topSearchView, withOffset: 2)
         tableView.autoPinEdgeToSuperviewEdge(.Left, withInset: 0)
 
+        //下拉刷新
+        self.tableView.mj_header = header
+        header.setRefreshingTarget(self, refreshingAction: #selector(headerRefresh))
+
+        
+        //底部刷新
+        footer.setRefreshingTarget(self, refreshingAction: #selector(footerRefresh))
+        self.tableView.mj_footer = footer
+        
+        
     }
     
     
@@ -117,7 +130,6 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
         return 204
     }
-    
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -225,13 +237,10 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             moreBtn.autoSetDimensionsToSize(btnSize)
             moreBtn.autoPinEdgeToSuperviewEdge(.Top, withInset: 15)
             moreBtn.autoPinEdgeToSuperviewEdge(.Left, withInset: kScreenWidth - 60)
-            
    
         }
 
         return headerView
-            
-        
     }
     
     
@@ -242,6 +251,7 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     
     
+    /*
     //区头跟随cell移动
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
@@ -259,7 +269,7 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         }
     }
     
-    
+    */
     
     
     // MARK: 头部点击事件
@@ -276,6 +286,32 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    // MARK: 下拉刷新
+    func headerRefresh(){
+        
+  
+        let time: NSTimeInterval = 2.0
+        let delay = dispatch_time(DISPATCH_TIME_NOW,
+                                  Int64(time * Double(NSEC_PER_SEC)))
+        dispatch_after(delay, dispatch_get_main_queue()) {
+            print("2 秒后输出")
+            self.tableView.mj_header.endRefreshing()
+        }
+    }
+    
+    
+    var index = 0
+    func footerRefresh(){
+        
+        self.tableView.mj_footer.endRefreshing()
+
+        index = index + 1
+        if index > 2 {
+            
+             self.tableView.mj_footer.endRefreshingWithNoMoreData()
+        }
+    }
+    
     
     // MARK: 导航栏按钮点击事件
     func selectedCityBtnClick() {
@@ -285,6 +321,8 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func nearByBtnClick() {
         
     }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
