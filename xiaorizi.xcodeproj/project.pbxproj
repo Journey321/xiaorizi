@@ -40,6 +40,7 @@
 		9C0793521D8F92E600E8569A /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C07934E1D8F92E600E8569A /* FindViewController.swift */; };
 		9C0793541D8F930300E8569A /* FindCategoryBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0793531D8F930300E8569A /* FindCategoryBtn.swift */; };
 		9C0793561D8FB71300E8569A /* FindCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0793551D8FB71300E8569A /* FindCustomTableViewCell.swift */; };
+		9C17D95B1D90DC0C00C189AD /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C17D95A1D90DC0C00C189AD /* SearchViewController.swift */; };
 		9C1D6DAB1D2A43DF0081DC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DA91D2A43DF0081DC41 /* Main.storyboard */; };
 		9C1D6DB01D2A43DF0081DC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1D6DAE1D2A43DF0081DC41 /* LaunchScreen.storyboard */; };
 		9C1D6DBB1D2A43DF0081DC41 /* xiaoriziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D6DBA1D2A43DF0081DC41 /* xiaoriziTests.swift */; };
@@ -129,6 +130,7 @@
 		9C07934E1D8F92E600E8569A /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		9C0793531D8F930300E8569A /* FindCategoryBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCategoryBtn.swift; sourceTree = "<group>"; };
 		9C0793551D8FB71300E8569A /* FindCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindCustomTableViewCell.swift; sourceTree = "<group>"; };
+		9C17D95A1D90DC0C00C189AD /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9C1D6DA21D2A43DF0081DC41 /* xiaorizi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xiaorizi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1D6DAA1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C1D6DAF1D2A43DF0081DC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -438,6 +440,7 @@
 			children = (
 				9C07934E1D8F92E600E8569A /* FindViewController.swift */,
 				9C653FA51D8FCF6500D70313 /* SpecialTableViewController.swift */,
+				9C17D95A1D90DC0C00C189AD /* SearchViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 				2C434FD21D33FB92009BFF7C /* NSDate+Util.swift in Sources */,
 				2C434FD81D33FB92009BFF7C /* MainTabbarViewController.swift in Sources */,
 				9CF7D7E81D7D4A88008B0AA8 /* NSString+Util.swift in Sources */,
+				9C17D95B1D90DC0C00C189AD /* SearchViewController.swift in Sources */,
 				2C434FD51D33FB92009BFF7C /* UIView+Util.swift in Sources */,
 				9C653FA61D8FCF6500D70313 /* SpecialTableViewController.swift in Sources */,
 				9CF7D8401D815E31008B0AA8 /* FeedbackTextView.swift in Sources */,

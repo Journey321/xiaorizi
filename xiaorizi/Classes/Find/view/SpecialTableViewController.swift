@@ -71,7 +71,6 @@ class SpecialTableViewController: UITableViewController {
     // MARK: 下拉刷新
     func headerRefresh(){
         
-        
         let time: NSTimeInterval = 2.0
         let delay = dispatch_time(DISPATCH_TIME_NOW,
                                   Int64(time * Double(NSEC_PER_SEC)))

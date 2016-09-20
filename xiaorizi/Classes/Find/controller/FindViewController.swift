@@ -274,8 +274,9 @@ class FindViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     // MARK: 头部点击事件
     func topBtnClick(){
-        print("----click----")
- 
+        
+        let vc = SearchViewController()
+        self.presentViewController(vc, animated: false, completion: nil)
     }
     
     
