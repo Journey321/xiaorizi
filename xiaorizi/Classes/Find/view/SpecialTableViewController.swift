@@ -55,7 +55,7 @@ class SpecialTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = FindCustomTableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+        let cell : FindCustomTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")as! FindCustomTableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         cell.isTheme = true
         return cell

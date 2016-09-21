@@ -48,7 +48,7 @@ class SetUpViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell.init(style: UITableViewCellStyle.Value1, reuseIdentifier: "cell")
+        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")!
         cell.textLabel?.text = nameArray.objectAtIndex(indexPath.row) as! NSString as String
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         cell.selectionStyle = UITableViewCellSelectionStyle.None;

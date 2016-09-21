@@ -122,13 +122,14 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 5
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "cell")
+        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")!
         cell.textLabel?.text = "11"
+        
         return cell
     }
 
@@ -141,15 +142,12 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         
     }
     
-    
     // MARK: 搜索
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()
-        self.tableView.mj_header.beginRefreshing()
         return true
     }
-    
     
     // MARK: 下拉刷新
     func headerRefresh(){

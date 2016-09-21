@@ -121,7 +121,8 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
        
         
         if indexPath.row == 0 {
-            let cell = MyCenterHeaderCell.init(style: UITableViewCellStyle.Value1, reuseIdentifier: "cellIdentifier")
+
+            let cell : MyCenterHeaderCell = tableView.dequeueReusableCellWithIdentifier("cellIdentifier")as! MyCenterHeaderCell
             cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
             cell.selectionStyle = UITableViewCellSelectionStyle.None;
             cell.tag = 99;
@@ -129,7 +130,7 @@ class MyCenterViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
         }
         
-        let cell = UITableViewCell.init(style: UITableViewCellStyle.Value1, reuseIdentifier: "cell")
+        let cell : UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell")!
         cell.textLabel?.text = nameArray.objectAtIndex(indexPath.row - 1) as? String
         cell.detailTextLabel?.text = subTittle.objectAtIndex(indexPath.row - 1) as? String
         
